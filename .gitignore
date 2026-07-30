@@ -1,0 +1,17 @@
+# Segredos e configuração local
+.env
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.egg-info/
+.venv/
+venv/
+
+# Dados e saídas geradas (mantenha apenas um exemplo pequeno versionado, se quiser)
+dados/*.xlsx
+dados/*.docx
+dados/*.pdf
+dados/faiss_index_topicos/
+dados/faiss_index_chunks/
