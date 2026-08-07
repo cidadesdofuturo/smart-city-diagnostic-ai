@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smart-city-diagnostic-ai"
+version = "0.2.0"
+description = "Pipeline de diagnóstico municipal com Gemini, LangChain, FAISS e Carta Brasileira para Cidades Inteligentes."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "pandas>=2.2,<3",
+  "openpyxl>=3.1,<4",
+  "python-docx>=1.1,<2",
+  "pydantic>=2.10,<3",
+  "langchain-core>=1.5,<2",
+  "langchain-community==0.4.2",
+  "langchain-google-genai==4.3.2",
+  "faiss-cpu>=1.11,<2",
+]
+
+[project.scripts]
+smart-city-diagnostic = "municipio_analise.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["municipio_analise*"]
+
+[tool.setuptools.package-data]
+municipio_analise = ["data/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
