@@ -1,55 +1,56 @@
-"""Dados contextuais municipais usados apenas para enriquecer a análise textual.
-
-Esses campos (PIB, IDH-M, GINI, CAPAG, estrutura de TI, instituições de
-pesquisa etc.) permanecem fora do conjunto de indicadores da metodologia e
-não entram no cálculo de maturidade, na priorização nem geram sugestões por si.
-"""
+"""Dados contextuais do notebook, separados dos indicadores da metodologia."""
 from __future__ import annotations
-
-import json
-from importlib import resources
 
 import pandas as pd
 
-from .classificador import normalizar
-from .exceptions import ClassificacaoError
+from .utils import normalizar
+
+_DADOS_CONTEXTUAIS_BRUTO = {
+    "PIB per capita do município": "Econômica",
+    "PIB Agropecuária": "Econômica",
+    "PIB Indústria": "Econômica",
+    "PIB Serviços": "Econômica",
+    "PIB Adminstração Pública": "Econômica",
+    "População ocupada com vínculo formal": "Econômica",
+    "Capacidade de pagamento dos municípios (CAPAG)": "Econômica",
+    "Empregos em TIC": "Econômica",
+    "Empresas de TICs no municipio": "Econômica",
+    "Número de Empresas em Parques Tecnológicos": "Econômica",
+    "Número de Incubadoras credenciadas - Lei de TIC": "Econômica",
+    "Número de Instituições de Ensino e Pesquisa em PD&I - Lei de TIC": "Econômica",
+    "Número de Centros e/ou Institutos de PD&I - Lei de TIC": "Econômica",
+    "Número de Empresas habilitadas - Lei de TIC": "Econômica",
+    "Número de empresas - Lei do Bem PD&I": "Econômica",
+    "Índice de desenvolvimento humano do município (IDH-M)": "Sociocultural",
+    "Índice de GINI da renda domiciliar per capita": "Sociocultural",
+    "Número de Campus de Institutos e Universidades Federais": "Sociocultural",
+    "Equipe de TI - Tamanho": "Capacidades Institucionais",
+    "Estrutura Organizacional de TIC": "Capacidades Institucionais",
+    "Incorporação de TICs - Áreas Prioritárias": "Capacidades Institucionais",
+    "Governança Tecnológica - Responsáveis": "Capacidades Institucionais",
+    "Governança de TI - Responsável": "Capacidades Institucionais",
+}
+
+DADOS_CONTEXTUAIS_MAPA = {
+    normalizar(coluna): {"dimensao": dimensao, "rotulo": coluna}
+    for coluna, dimensao in _DADOS_CONTEXTUAIS_BRUTO.items()
+}
 
 
-class DadosContextuaisRepository:
-    """Carrega o mapa campo contextual -> dimensão e extrai valores da planilha."""
-
-    def __init__(self, mapa: dict[str, dict[str, str]]):
-        self._mapa = mapa
-
-    @classmethod
-    def carregar_padrao(cls) -> "DadosContextuaisRepository":
-        try:
-            bruto = json.loads(
-                resources.files("municipio_analise.data")
-                .joinpath("dados_contextuais_map.json")
-                .read_text(encoding="utf-8")
-            )
-        except (FileNotFoundError, json.JSONDecodeError) as exc:
-            raise ClassificacaoError(f"Falha ao carregar dados contextuais: {exc}") from exc
-
-        mapa = {
-            normalizar(rotulo): {"dimensao": dimensao, "rotulo": rotulo}
-            for rotulo, dimensao in bruto.items()
-        }
-        return cls(mapa)
-
-    def obter_por_dimensao(self, dimensao: str, linha_planilha: pd.Series) -> dict[str, object]:
-        dados: dict[str, object] = {}
-        for chave_normalizada, info in self._mapa.items():
-            if info["dimensao"] != dimensao or chave_normalizada not in linha_planilha.index:
-                continue
+def obter_dados_contextuais(dimensao, linha_planilha):
+    dados = {}
+    for chave_normalizada, info in DADOS_CONTEXTUAIS_MAPA.items():
+        if info["dimensao"] != dimensao:
+            continue
+        if chave_normalizada in linha_planilha.index:
             valor = linha_planilha[chave_normalizada]
             if not pd.isna(valor):
                 dados[info["rotulo"]] = valor
-        return dados
+    return dados
 
-    def obter_todos(self, dimensoes, linha_planilha: pd.Series) -> dict[str, object]:
-        dados: dict[str, object] = {}
-        for dimensao in dimensoes:
-            dados.update(self.obter_por_dimensao(dimensao, linha_planilha))
-        return dados
+
+def obter_todos_dados_contextuais(linha_planilha, dimensoes):
+    dados = {}
+    for dimensao in dimensoes:
+        dados.update(obter_dados_contextuais(dimensao, linha_planilha))
+    return dados

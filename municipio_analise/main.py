@@ -1,6 +1,4 @@
-# =====================================================
-# EXECUÇÃO PRINCIPAL
-# =====================================================
+"""Ponto de entrada do diagnóstico municipal."""
 import json
 
 import pandas as pd
@@ -13,6 +11,7 @@ from .classificacao import (
     INDICADORES_NAO_CLASSIFICADOS,
     classificar_indicador,
 )
+from .contexto import obter_dados_contextuais, obter_todos_dados_contextuais
 from .dados_carta import CHUNKS_CARTA
 from .prompts import criar_chains
 from .rag import (
@@ -36,7 +35,6 @@ DIMENSAO_PARA_CHAVE = {
 def main():
     config.validar_configuracao()
 
-    # --- Modelos e índices semânticos ---
     embeddings = criar_embeddings()
     llm = criar_llm()
     chain_geral, chain_dimensao = criar_chains(llm)
@@ -44,11 +42,12 @@ def main():
     indice_topicos = carregar_ou_construir_indice_topicos(embeddings)
     classificador_embedding = criar_classificador_por_embedding(indice_topicos)
 
-    # --- Planilha ---
     try:
         df = pd.read_excel(config.ARQUIVO_PLANILHA)
-    except FileNotFoundError:
-        raise FileNotFoundError(f"Planilha de indicadores não encontrada: {config.ARQUIVO_PLANILHA}")
+    except FileNotFoundError as exc:
+        raise FileNotFoundError(
+            f"Planilha de indicadores não encontrada: {config.ARQUIVO_PLANILHA}"
+        ) from exc
 
     df.columns = (
         df.columns.str.strip().str.lower().str.normalize("NFKD")
@@ -57,10 +56,12 @@ def main():
 
     municipios = df[config.COLUNA_MUNICIPIO].unique().tolist()
     print("\nMunicípios disponíveis:")
-    for i, m in enumerate(municipios, 1):
-        print(f"{i} - {m}")
+    for i, municipio_lista in enumerate(municipios, 1):
+        print(f"{i} - {municipio_lista}")
 
     escolha = int(input("\nDigite o número do município: "))
+    if escolha < 1 or escolha > len(municipios):
+        raise ValueError("Seleção de município inválida.")
     municipio = municipios[escolha - 1]
 
     dados = df[df[config.COLUNA_MUNICIPIO] == municipio].iloc[0]
@@ -68,41 +69,61 @@ def main():
     porte = classificar_porte(populacao)
     print(f"\n🔹 Porte identificado: {porte}")
 
-    colunas_ignoradas = [config.COLUNA_MUNICIPIO, config.COLUNA_POPULACAO, "cod municipio", "estado", "avaliada"]
+    colunas_ignoradas = [
+        config.COLUNA_MUNICIPIO,
+        config.COLUNA_POPULACAO,
+        "cod municipio",
+        "estado",
+        "avaliada",
+    ]
     candidatos_indicadores = dados.drop(
         labels=[c for c in colunas_ignoradas if c in dados.index]
     ).to_dict()
 
-    # --- Classifica cada coluna candidata por dimensão/tópico ---
-    # (colunas de metadado/agregado em COLUNAS_NAO_INDICADORES são
-    # descartadas aqui mesmo, sem entrar em INDICADORES_NAO_CLASSIFICADOS)
     indicadores_por_dimensao = {d: {} for d in DIMENSOES}
     for nome, valor in candidatos_indicadores.items():
         classificacao = classificar_indicador(nome, classificador_embedding)
         if classificacao:
             indicadores_por_dimensao[classificacao["dimensao"]][nome] = valor
 
-    # análise geral usa o conjunto de todos os indicadores já classificados
-    # (não os brutos da planilha, para não incluir ruído/agregados)
     todos_indicadores = {
         nome: valor
         for indicadores in indicadores_por_dimensao.values()
         for nome, valor in indicadores.items()
     }
 
+    dados_contextuais_por_dimensao = {
+        dimensao: obter_dados_contextuais(dimensao, dados)
+        for dimensao in DIMENSOES
+    }
+    todos_dados_contextuais = obter_todos_dados_contextuais(dados, DIMENSOES)
+
     for dimensao in DIMENSOES:
         if not indicadores_por_dimensao[dimensao]:
             print(f"⚠️  Dimensão '{dimensao}' ficou sem indicadores classificados.")
 
     if INDICADORES_NAO_CLASSIFICADOS:
-        print(f"⚠️  Indicadores não classificados (revisar data/mapa_indicadores.json): "
-              f"{sorted(set(INDICADORES_NAO_CLASSIFICADOS))}")
+        print(
+            "⚠️  Indicadores não classificados (revisar data/mapa_indicadores.json): "
+            f"{sorted(set(INDICADORES_NAO_CLASSIFICADOS))}"
+        )
 
-    # --- 5 chamadas ao modelo ---
-    chunks_gerais = [CHUNKS_CARTA[f"geral_{t}"] for t in CHUNKS_GERAIS if f"geral_{t}" in CHUNKS_CARTA]
+    chunks_gerais = [
+        CHUNKS_CARTA[f"geral_{t}"]
+        for t in CHUNKS_GERAIS
+        if f"geral_{t}" in CHUNKS_CARTA
+    ]
 
     print("🔹 Gerando análise geral...")
-    analise_geral = gerar_analise_geral(chain_geral, municipio, porte, todos_indicadores, chunks_gerais)
+    analise_geral = gerar_analise_geral(
+        chain_geral,
+        municipio,
+        porte,
+        todos_indicadores,
+        chunks_gerais,
+        dados_contextuais=todos_dados_contextuais,
+        tentativas=config.TENTATIVAS_LLM,
+    )
 
     relatorio = {"analise_geral": analise_geral, "dimensoes": {}}
     for dimensao, chave in DIMENSAO_PARA_CHAVE.items():
@@ -113,13 +134,14 @@ def main():
             municipio=municipio,
             porte=porte,
             indicadores_dimensao=indicadores_por_dimensao[dimensao],
+            dados_contextuais_dimensao=dados_contextuais_por_dimensao[dimensao],
             linha_planilha=dados,
+            tentativas=config.TENTATIVAS_LLM,
             indice_chunks=indice_chunks,
             classificador_embedding=classificador_embedding,
         )
 
     print("\n" + json.dumps(relatorio, ensure_ascii=False, indent=2))
-
     gerar_relatorio_word(municipio, relatorio)
     print("✅ Processo finalizado com sucesso.")
 

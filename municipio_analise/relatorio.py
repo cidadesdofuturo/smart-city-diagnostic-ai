@@ -1,6 +1,6 @@
-# =====================================================
-# GERAÇÃO DO RELATÓRIO WORD (adaptado à saída estruturada)
-# =====================================================
+"""Geração do relatório Word."""
+from pathlib import Path
+
 from docx import Document
 
 from . import config
@@ -14,10 +14,11 @@ NOMES_EXIBICAO = {
 
 
 def gerar_relatorio_word(municipio, relatorio: dict, pasta_saida=None):
-    pasta_saida = pasta_saida or config.BASE_PATH
+    pasta_saida = Path(pasta_saida) if pasta_saida else config.BASE_PATH
+    pasta_saida.mkdir(parents=True, exist_ok=True)
+
     doc = Document()
     doc.add_heading(f"Relatório Institucional – {municipio}", level=1)
-
     doc.add_heading("Análise Geral", level=2)
     doc.add_paragraph(relatorio["analise_geral"])
 
