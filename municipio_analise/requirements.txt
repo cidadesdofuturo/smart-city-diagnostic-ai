@@ -1,0 +1,14 @@
+langchain>=1.0.0
+langchain-classic>=1.0.0
+langchain-google-genai>=2.0.0
+langchain-community>=0.3.0
+langchain-core>=0.3.0
+faiss-cpu>=1.8.0
+python-docx>=1.1.0
+pydantic>=2.0.0
+pandas>=2.0.0
+openpyxl>=3.1.0
+
+# testes
+pytest>=8.0.0
+pytest-asyncio>=0.24.0

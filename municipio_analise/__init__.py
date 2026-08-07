@@ -1,5 +1,7 @@
-"""Análise Inteligente de Municípios — geração de relatórios institucionais
-a partir de indicadores municipais, usando LangChain, embeddings e RAG
-sobre a Carta Brasileira para Cidades Inteligentes."""
+"""municipio_analise — análise institucional municipal do Cidades do Futuro."""
+from .agent import AgenteAnaliseMunicipal
+from .config import Config
+from .pipeline import PipelineAnaliseMunicipio
 
-__version__ = "0.1.0"
+__all__ = ["Config", "PipelineAnaliseMunicipio", "AgenteAnaliseMunicipal"]
+__version__ = "1.1.0"
