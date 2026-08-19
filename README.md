@@ -1,25 +1,46 @@
 # Smart City Diagnostic AI
 
-Pipeline de diagnóstico municipal do **Programa Cidades do Futuro**, estruturado a partir de indicadores municipais de maturidade, da **Carta Brasileira para Cidades Inteligentes**, busca semântica com FAISS e validação web controlada.
+Pipeline de diagnóstico municipal do **Programa Cidades do Futuro**, estruturado a partir de indicadores municipais de maturidade, da Carta Brasileira para Cidades Inteligentes, busca semântica com FAISS e validação web controlada.
 
-> **Implementação de referência atual:** `notebooks/notebook_fonte_validacao_web.ipynb`
+> Implementação de referência atual: `notebooks/notebook_fonte_validacao_web.ipynb`
+
+## Exemplo de relatório
+
+Um **relatório completo de exemplo** gerado pelo pipeline está disponível neste repositório:
+
+**[Ver relatório de exemplo - Viçosa/MG](docs/exemplos/relatorio_vicosa.pdf)**
+
+O arquivo demonstra o formato final entregue pelo sistema, incluindo:
+
+- caracterização do município;
+- análise das dimensões de maturidade;
+- interpretação dos indicadores municipais;
+- contextualização com informações externas validadas;
+- referências à Carta Brasileira para Cidades Inteligentes;
+- identificação de capacidades e lacunas;
+- sugestões de melhoria;
+- análise geral consolidada.
+
+O relatório publicado tem finalidade **exclusivamente demonstrativa**, permitindo visualizar o tipo de resultado produzido pelo pipeline sem necessidade de executar o projeto.
+
+Relatórios operacionais, bases municipais, planilhas de trabalho e demais artefatos gerados durante a execução permanecem fora do repositório.
 
 ## O que o projeto faz
 
 - lê `indicadores.xlsx`;
 - classifica indicadores em quatro dimensões e tópicos;
-- usa a escala de maturidade 0–7 para priorizar lacunas e capacidades;
+- usa a escala de maturidade 0-7 para priorizar lacunas e capacidades;
 - usa embeddings e FAISS para classificação semântica de indicadores novos;
 - usa um índice FAISS granular da Carta Brasileira para recuperar referências metodológicas relevantes;
-- prioriza até **5 indicadores/tópicos por dimensão** para o RAG;
-- recupera até **8 candidatos por indicador** e aplica **reranking**;
-- envia no máximo **8 chunks finais** da Carta ao modelo;
+- prioriza até 5 indicadores/tópicos por dimensão para o RAG;
+- recupera até 8 candidatos por indicador e aplica reranking;
+- envia no máximo 8 chunks finais da Carta ao modelo;
 - usa dados contextuais apenas para caracterização do município;
-- gera o primeiro rascunho da dimensão **sem pesquisa web**;
-- usa **Claude Web Search** para validar e atualizar até 5 pontos prioritários por dimensão;
+- gera o primeiro rascunho da dimensão sem pesquisa web;
+- usa Claude Web Search para validar e atualizar até 5 pontos prioritários por dimensão;
 - revisa a dimensão com base apenas em fatos externos confiáveis e territorialmente confirmados;
-- mantém a planilha como fonte principal: a web **não recalcula nem substitui** os níveis de maturidade;
-- gera **2 ou 3 parágrafos por dimensão** e **4 sugestões de melhoria**;
+- mantém a planilha como fonte principal: a web não recalcula nem substitui os níveis de maturidade;
+- gera 2 ou 3 parágrafos por dimensão e 4 sugestões de melhoria;
 - gera a Análise Geral somente depois das quatro dimensões finalizadas;
 - valida a saída estruturada com Pydantic;
 - gera relatório Word.
@@ -40,7 +61,7 @@ indicadores.xlsx
       ↓
 normalização e classificação dos indicadores
       ↓
-níveis de maturidade 0–7
+níveis de maturidade 0-7
       ↓
 seleção de até 5 prioridades por dimensão
       ↓
@@ -107,7 +128,7 @@ A pesquisa web é complementar e segue regras rígidas:
 
 ## Linguagem e regras editoriais
 
-Os relatórios são escritos para **gestores municipais não especialistas**. O sistema prioriza frases diretas, explica siglas e conceitos quando necessário e evita jargão excessivo.
+Os relatórios são escritos para gestores municipais não especialistas. O sistema prioriza frases diretas, explica siglas e conceitos quando necessário e evita jargão excessivo.
 
 Regras adicionais:
 
@@ -142,10 +163,14 @@ Execute as células na ordem e selecione o município solicitado pelo notebook.
 smart-city-diagnostic-ai/
 ├── dados/
 ├── docs/
+│   ├── ARQUITETURA.md
+│   ├── METODOLOGIA.md
+│   └── exemplos/
+│       └── relatorio_vicosa.pdf
 ├── municipio_analise/
 ├── notebooks/
 │   ├── exemplo_colab.ipynb
-│   └── notebook_fonte_validacao_web.ipynb  # implementação atual de referência
+│   └── notebook_fonte_validacao_web.ipynb
 ├── tests/
 ├── CHANGELOG.md
 ├── README.en.md
@@ -157,13 +182,15 @@ smart-city-diagnostic-ai/
 
 ### Nota sobre `municipio_analise/`
 
-O pacote modular foi criado a partir de uma versão anterior do notebook. Até que a sincronização completa com Claude Sonnet, Claude Web Search e o RAG granular seja concluída, o **notebook acima deve ser tratado como a fonte de verdade da implementação atual**.
+O pacote modular foi criado a partir de uma versão anterior do notebook. Até que a sincronização completa com Claude Sonnet, Claude Web Search e o RAG granular seja concluída, o notebook acima deve ser tratado como a fonte de verdade da implementação atual.
 
 ## Segurança e dados
 
-- nunca publique `.env`, planilhas municipais, índices FAISS gerados ou relatórios contendo dados de trabalho;
+- nunca publique `.env`, chaves de API, planilhas municipais ou índices FAISS gerados;
 - nunca publique `ANTHROPIC_API_KEY` ou a chave Gemini;
-- mantenha dados operacionais e artefatos gerados no `.gitignore`.
+- relatórios operacionais e dados de trabalho devem permanecer no `.gitignore`;
+- apenas relatórios especificamente preparados para demonstração pública, sem informações restritas ou operacionais, devem ser versionados no repositório;
+- o relatório disponível em `docs/exemplos/` possui finalidade demonstrativa.
 
 ## Licenciamento
 
