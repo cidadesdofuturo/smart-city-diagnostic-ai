@@ -5,30 +5,33 @@ from pathlib import Path
 
 from .utils import normalizar_coluna
 
-DATA_DIR = Path(__file__).resolve().parent / "data"
+_DATA_DIR = Path(__file__).with_name("data")
 
 
-def _ler_json(nome: str):
-    return json.loads((DATA_DIR / nome).read_text(encoding="utf-8"))
+def _carregar_json(nome: str):
+    return json.loads((_DATA_DIR / nome).read_text(encoding="utf-8"))
 
 
-CHUNKS_CARTA = _ler_json("carta_chunks.json")
-MAPA_INDICADORES_BRUTO = _ler_json("mapa_indicadores.json")
-MAPA_NIVEL_MATURIDADE_BRUTO = _ler_json("mapa_nivel_maturidade.json")
-COLUNAS_NAO_INDICADORES_BRUTO = _ler_json("colunas_nao_indicadores.json")
-DADOS_CONTEXTUAIS_BRUTO = _ler_json("dados_contextuais.json")
+CHUNKS_CARTA = _carregar_json("carta_chunks.json")
+TOPICOS_SEM_CHUNK_NA_CARTA = set(_carregar_json("topicos_sem_chunk_na_carta.json"))
 
-MAPA_INDICADORES = {
-    normalizar_coluna(k): v for k, v in MAPA_INDICADORES_BRUTO.items()
-}
+_MAPA_INDICADORES_BRUTO = _carregar_json("mapa_indicadores.json")
+MAPA_INDICADORES = {normalizar_coluna(k): v for k, v in _MAPA_INDICADORES_BRUTO.items()}
+
+_MAPA_NIVEL_MATURIDADE_BRUTO = _carregar_json("mapa_nivel_maturidade.json")
 MAPA_NIVEL_MATURIDADE = {
     normalizar_coluna(k): normalizar_coluna(v)
-    for k, v in MAPA_NIVEL_MATURIDADE_BRUTO.items()
+    for k, v in _MAPA_NIVEL_MATURIDADE_BRUTO.items()
 }
+
 COLUNAS_NAO_INDICADORES = {
-    normalizar_coluna(c) for c in COLUNAS_NAO_INDICADORES_BRUTO
+    normalizar_coluna(c) for c in _carregar_json("colunas_nao_indicadores.json")
 }
+
+_DADOS_CONTEXTUAIS_BRUTO = _carregar_json("dados_contextuais.json")
 DADOS_CONTEXTUAIS_MAPA = {
     normalizar_coluna(coluna): {"dimensao": dimensao, "rotulo": coluna}
-    for coluna, dimensao in DADOS_CONTEXTUAIS_BRUTO.items()
+    for coluna, dimensao in _DADOS_CONTEXTUAIS_BRUTO.items()
 }
+
+CARTA_REVISADA_SNAPSHOT = _carregar_json("carta_revisada_snapshot.json")

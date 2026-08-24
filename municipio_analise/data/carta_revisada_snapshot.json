@@ -1,0 +1,2908 @@
+{
+  "fonte": "Carta Brasileira para Cidades Inteligentes — Edição Revisada",
+  "arquivo_origem": "carta_brasileira_cidades_inteligentes (1).pdf",
+  "pipeline_extracao": "posicional_pymupdf_v1",
+  "total_recomendacoes": 163,
+  "contagem_por_objetivo": {
+    "1": 30,
+    "2": 24,
+    "3": 22,
+    "4": 23,
+    "5": 24,
+    "6": 12,
+    "7": 14,
+    "8": 14
+  },
+  "conceitos": [
+    {
+      "doc_id": "conceito_cidades_inteligentes",
+      "tipo": "conceito",
+      "titulo": "Conceito brasileiro de cidades inteligentes",
+      "texto": "CIDADES INTELIGENTES São cidades comprometidas com o desenvolvimento urbano e a transformação digital sustentáveis, em seus aspectos econômico, ambiental e sociocultural, que atuam de forma planejada, inovadora, inclusiva e em rede, promovem o letramento digital, a governança e a gestão colaborativas e utilizam tecnologias para solucionar problemas concretos, criar oportunidades, oferecer serviços com eficiência, reduzir desigualdades, aumentar a resiliência e melhorar a qualidade de vida de todas as pessoas, garantindo o uso seguro e responsável de dados e das tecnologias da informação e comunicação.",
+      "pagina_inicio": 28,
+      "pagina_fim": 28
+    },
+    {
+      "doc_id": "conceito_transformacao_digital_sustentavel",
+      "tipo": "conceito",
+      "titulo": "Transformação digital sustentável",
+      "texto": "TRANSFORMAÇÃO DIGITAL SUSTENTÁVEL é o processo de adoção responsável de tecnologias da informação e comunicação, baseado na ética digital e orientado para o bem comum, compreendendo a segurança cibernética e a transparência na utilização de dados, informações, algoritmos e dispositivos, a disponibilização de dados e códigos abertos, acessíveis a todas as pessoas, a proteção geral de dados pessoais, o letramento e a inclusão digitais, de forma adequada e respeitosa em relação às características socioculturais, econômicas, urbanas, ambientais e político-institucionais específicas de cada território, à conservação dos recursos naturais e das condições de saúde das pessoas.",
+      "pagina_inicio": 29,
+      "pagina_fim": 29
+    },
+    {
+      "doc_id": "conceito_desenvolvimento_urbano_sustentavel",
+      "tipo": "conceito",
+      "titulo": "Desenvolvimento urbano sustentável",
+      "texto": "DESENVOLVIMENTO URBANO SUSTENTÁVEL é o processo de ocupação urbana orientada para o bem comum e para a redução de desigualdades, que equilibra as necessidades sociais, dinamiza a cultura, valoriza e fortalece identidades, utiliza de forma responsável os recursos naturais, tecnológicos, urbanos e financeiros, e promove o desenvolvimento econômico local, impulsionando a criação de oportunidades na diversidade e a inclusão social, produtiva e espacial de todas as pessoas, da presente e das futuras gerações, por meio da distribuição equitativa de infraestrutura, espaços públicos, bens e serviços urbanos e do adequado ordenamento do uso e da ocupação do solo em diferentes contextos e escalas territoriais, com respeito a pactos sociopolíticos estabelecidos em arenas democráticas de governança colaborativa.",
+      "pagina_inicio": 29,
+      "pagina_fim": 29
+    }
+  ],
+  "principios": [
+    {
+      "titulo": "RESPEITO À DIVERSIDADE TERRITORIAL BRASILEIRA, EM SEUS ASPECTOS CULTURAIS, SOCIAIS, ECONÔMICOS E AMBIENTAIS",
+      "pagina": 30,
+      "texto": "O processo de transformação digital precisa ser adequado às realidades locais. Essa adequação deve levar em conta as áreas remotas e as diferenças entre áreas rurais e urbanas dos municípios. Deve seguir as tipologias da Política Nacional de Desenvolvimento Urbano (PNDU)."
+    },
+    {
+      "titulo": "VISÃO SISTÊMICA DA CIDADE E DA TRANSFORMAÇÃO DIGITAL.",
+      "pagina": 30,
+      "texto": "A transformação digital também é uma transformação urbana. A cidade é um sistema complexo, dinâmico e vivo, que reflete, reage e materializa questões culturais, sociais, ambientais e econômicas."
+    },
+    {
+      "titulo": "INTEGRAÇÃO DOS CAMPOS URBANO E DIGITAL",
+      "pagina": 30,
+      "texto": "A articulação entre setores e disciplinas científicas combina tecnologias digitais e sociais, inclusive de forma experimental. O objetivo é desenvolver novos processos para melhorar a qualidade de vida nas cidades."
+    },
+    {
+      "titulo": "CONSERVAÇÃO DO MEIO AMBIENTE",
+      "pagina": 30,
+      "texto": "Inclui: uso sustentável dos recursos naturais; combate e reversão de práticas de degradação do meio ambiente; reconhecimento e adoção de soluções baseadas natureza, e; reconhecimento e adoção de outras abordagens ambientais inovadoras nas matrizes de desenvolvimento."
+    },
+    {
+      "titulo": "INTERESSE PÚBLICO ACIMA DE TUDO",
+      "pagina": 30,
+      "texto": "As ações de cidades inteligentes devem respeitar os princípios que a Constituição Federal define para a Administração Pública e para a política urbana. No caso da Administração Pública: legalidade, impessoalidade, moralidade, publicidade e eficiência. No caso da política urbana: a cidade e a propriedade devem atender ao bem coletivo e cumprir sua função social."
+    }
+  ],
+  "diretrizes": [
+    {
+      "titulo": "PROMOVER O DESENVOLVIMENTO URBANO SUSTENTÁVEL",
+      "pagina": 31,
+      "texto": "Agir conforme a perspectiva de desenvolvimento urbano sustentável que está na legislação, nas políticas brasileiras e em acordos internacionais."
+    },
+    {
+      "titulo": "CONSTRUIR RESPOSTAS PARA OS PROBLEMAS LOCAIS",
+      "pagina": 31,
+      "texto": "Avaliar e promover ações levando em conta o potencial que elas têm de responder aos desafios locais, adequando-as ao estágio tecnológico do município."
+    },
+    {
+      "titulo": "PROMOVER EDUCAÇÃO E INCLUSÃO DIGITAL",
+      "pagina": 31,
+      "texto": "Impulsionar e promover ações que estimulem a formação cidadã e o letramento digital, de forma contínua. As ações devem atender pessoas de todas as idades, gêneros, raças e classes sociais, fortalecendo a sua autonomia."
+    },
+    {
+      "titulo": "ESTIMULAR O PROTAGONISMO COMUNITÁRIO",
+      "pagina": 31,
+      "texto": "Estimular e garantir o envolvimento de pessoas de todas as idades, gêneros, raças e classes sociais e dos coletivos locais, inclusive povos e comunidades tradicionais."
+    },
+    {
+      "titulo": "COLABORAR E ESTABELECER PARCERIAS",
+      "pagina": 31,
+      "texto": "Realizar ações de cooperação entre setores público, privado, organizações da sociedade civil e instituições de ensino e pesquisa."
+    },
+    {
+      "titulo": "DECIDIR COM BASE EM EVIDÊNCIAS",
+      "pagina": 31,
+      "texto": "Usar dados e sistemas de forma responsável, transparente e compartilhada."
+    }
+  ],
+  "objetivos": {
+    "1": {
+      "objetivo": 1,
+      "pagina_inicio": 32,
+      "pagina_fim": 33,
+      "texto_completo": "Integrar a transformação digital nas políticas, programas e ações de desenvolvimento urbano sustentável, respeitando as diversidades e considerando as desigualdades presentes nas cidades brasileiras Contexto › Para reduzir desigualdades socioespaciais, é preciso considerar o desenvolvimento territorial a partir de uma visão ampla. Essa visão deve levar em conta vários aspectos, especialmente a localização, a disponibilização e o acesso a recursos, infraestruturas, bens e serviços essenciais, educação, cultura e informação. A transformação digital traz oportunidades para compreender melhor e enfrentar os problemas urbanos brasileiros, que são históricos. Mas ações de tecnologia sem direcionamento podem até aumentar desigualdades antigas, como a falta ou deficiência no acesso a serviços urbanos básicos. Governos e sociedade precisam agir para que a tecnologia atenda às necessidades reais das cidades. Iniciativas e soluções digitais devem estar alinhadas com uma visão estratégica de desenvolvimento urbano sustentável e de qualidade de vida. Além disso devem estar sintonizadas com a grande diversidade brasileira. Esse processo requer que a sociedade e as instituições locais se fortaleçam para assumir o protagonismo na adaptação da transformação digital às suas realidades. Para isso, elas devem adequar políticas, programas e ações de desenvolvimento urbano ao novo contexto da transformação digital. Devem aperfeiçoar infraestruturas, ferramentas e sistemas digitais para a prestação de serviços públicos de qualidade.",
+      "titulo": "Integrar a transformação digital nas políticas, programas e ações de desenvolvimento urbano sustentável, respeitando as diversidades e considerando as desigualdades presentes nas cidades brasileiras",
+      "contexto": "Para reduzir desigualdades socioespaciais, é preciso considerar o desenvolvimento territorial a partir de uma visão ampla. Essa visão deve levar em conta vários aspectos, especialmente a localização, a disponibilização e o acesso a recursos, infraestruturas, bens e serviços essenciais, educação, cultura e informação. A transformação digital traz oportunidades para compreender melhor e enfrentar os problemas urbanos brasileiros, que são históricos. Mas ações de tecnologia sem direcionamento podem até aumentar desigualdades antigas, como a falta ou deficiência no acesso a serviços urbanos básicos. Governos e sociedade precisam agir para que a tecnologia atenda às necessidades reais das cidades. Iniciativas e soluções digitais devem estar alinhadas com uma visão estratégica de desenvolvimento urbano sustentável e de qualidade de vida. Além disso devem estar sintonizadas com a grande diversidade brasileira. Esse processo requer que a sociedade e as instituições locais se fortaleçam para assumir o protagonismo na adaptação da transformação digital às suas realidades. Para isso, elas devem adequar políticas, programas e ações de desenvolvimento urbano ao novo contexto da transformação digital. Devem aperfeiçoar infraestruturas, ferramentas e sistemas digitais para a prestação de serviços públicos de qualidade."
+    },
+    "2": {
+      "objetivo": 2,
+      "pagina_inicio": 33,
+      "pagina_fim": 33,
+      "texto_completo": "Prover acesso equitativo à internet de qualidade para todas as pessoas Contexto › Integrar o urbano e o digital nas políticas públicas e nos instrumentos de ordenamento territorial é importante, mas essa ação deve vir acompanhada de conectividade. O desenvolvimento sustentável depende de todas as pessoas acessarem internet e ferramentas digitais de qualidade. Uma boa conectividade digital determina a inclusão social e produtiva e a justa distribuição de oportunidades. Em função disso, governos e iniciativa privada devem conhecer os territórios onde o acesso é precário e corrigir essa distorção.",
+      "titulo": "Prover acesso equitativo à internet de qualidade para todas as pessoas",
+      "contexto": "Integrar o urbano e o digital nas políticas públicas e nos instrumentos de ordenamento territorial é importante, mas essa ação deve vir acompanhada de conectividade. O desenvolvimento sustentável depende de todas as pessoas acessarem internet e ferramentas digitais de qualidade. Uma boa conectividade digital determina a inclusão social e produtiva e a justa distribuição de oportunidades. Em função disso, governos e iniciativa privada devem conhecer os territórios onde o acesso é precário e corrigir essa distorção."
+    },
+    "3": {
+      "objetivo": 3,
+      "pagina_inicio": 33,
+      "pagina_fim": 34,
+      "texto_completo": "Estabelecer sistemas de governança de dados e de tecnologias, com transparência, segurança e privacidade Contexto › Políticas públicas e conectividade são elementos básicos, mas insuficientes para equidade (distribuição justa, capaz de atender necessidades diferentes de todas as pessoas) de oportunidades no contexto da transformação digital. É preciso estruturar sistemas de governança de dados e de TICs (tecnologias de informação e comunicação) adequados a cada realidade. Somente a partir desses sistemas será possível integrar infraestrutura, sistemas, ferramentas e soluções digitais no desenvolvimento urbano de todas as cidades. Diferentes governos e setores da sociedade devem cooperar para os sistemas funcionarem de forma integrada, responsável e inovadora. Com segurança cibernética e garantia de privacidade pessoal. Devem cooperar para oferecer um ambiente de ética digital que assegure dados compartilhados e abertos, sempre que possível, e que garanta proteção jurídica às pessoas.",
+      "titulo": "Estabelecer sistemas de governança de dados e de tecnologias, com transparência, segurança e privacidade",
+      "contexto": "Políticas públicas e conectividade são elementos básicos, mas insuficientes para equidade (distribuição justa, capaz de atender necessidades diferentes de todas as pessoas) de oportunidades no contexto da transformação digital. É preciso estruturar sistemas de governança de dados e de TICs (tecnologias de informação e comunicação) adequados a cada realidade. Somente a partir desses sistemas será possível integrar infraestrutura, sistemas, ferramentas e soluções digitais no desenvolvimento urbano de todas as cidades. Diferentes governos e setores da sociedade devem cooperar para os sistemas funcionarem de forma integrada, responsável e inovadora. Com segurança cibernética e garantia de privacidade pessoal. Devem cooperar para oferecer um ambiente de ética digital que assegure dados compartilhados e abertos, sempre que possível, e que garanta proteção jurídica às pessoas."
+    },
+    "4": {
+      "objetivo": 4,
+      "pagina_inicio": 34,
+      "pagina_fim": 34,
+      "texto_completo": "Adotar modelos inovadores e inclusivos de governança urbana e fortalecer o papel do poder público como gestor de impactos da transformação digital nas cidades Contexto › A governança de informação tratada no objetivo anterior faz parte de uma governança urbana mais ampla, que estimula a colaboração e cria inteligência territorial (baseada em sistemas e informações que orientam decisões estratégicas baseadas em evidências para planejar, executar, gerenciar e monitorar ações no território). Pessoas e instituições precisam conversar, discutir os problemas e construir soluções que atendam à coletividade. Nesse sentido, a transformação digital pode melhorar os tradicionais modelos de participação, tornando-os mais inovadores e inclusivos. Pode-se criar ambientes que aproximem e reconfigurem a relação entre Estado, setores da sociedade. Ou que aproximem e reconfigurem a relação entre setores urbanos (como habitação, saneamento e mobilidade) e entre os entes da federação (União, Estados, Distrito Federal e Municípios). Uma governança inovadora e inclusiva estimula a colaboração, pois esta é uma forma de identificar problemas urbanos reais com base em evidências e desenvolver soluções. O poder público municipal é protagonista da execução da política urbana, um dos guardiões do interesse coletivo. Daí o seu papel estratégico para promover e facilitar as ações de governança urbana. E deve coordenar os processos que decidem sobre promoção, regulamentação ou desestímulo de instrumentos surgidos com a transformação digital, tais como dados, sistemas de informação e modelos de negócios.",
+      "titulo": "Adotar modelos inovadores e inclusivos de governança urbana e fortalecer o papel do poder público como gestor de impactos da transformação digital nas cidades",
+      "contexto": "A governança de informação tratada no objetivo anterior faz parte de uma governança urbana mais ampla, que estimula a colaboração e cria inteligência territorial (baseada em sistemas e informações que orientam decisões estratégicas baseadas em evidências para planejar, executar, gerenciar e monitorar ações no território). Pessoas e instituições precisam conversar, discutir os problemas e construir soluções que atendam à coletividade. Nesse sentido, a transformação digital pode melhorar os tradicionais modelos de participação, tornando-os mais inovadores e inclusivos. Pode-se criar ambientes que aproximem e reconfigurem a relação entre Estado, setores da sociedade. Ou que aproximem e reconfigurem a relação entre setores urbanos (como habitação, saneamento e mobilidade) e entre os entes da federação (União, Estados, Distrito Federal e Municípios). Uma governança inovadora e inclusiva estimula a colaboração, pois esta é uma forma de identificar problemas urbanos reais com base em evidências e desenvolver soluções. O poder público municipal é protagonista da execução da política urbana, um dos guardiões do interesse coletivo. Daí o seu papel estratégico para promover e facilitar as ações de governança urbana. E deve coordenar os processos que decidem sobre promoção, regulamentação ou desestímulo de instrumentos surgidos com a transformação digital, tais como dados, sistemas de informação e modelos de negócios."
+    },
+    "5": {
+      "objetivo": 5,
+      "pagina_inicio": 34,
+      "pagina_fim": 35,
+      "texto_completo": "Fomentar o desenvolvimento econômico local no contexto da transformação digital Contexto › Uma governança bem estruturada, colaborativa e inclusiva torna as cidades mais habitáveis e fortalece a economia local. O mesmo ocorre quando as decisões são tomadas com base em dados e evidências científicas. A transformação digital pode gerar valor, emprego e renda para as pessoas das cidades. A economia do compartilhamento, a economia criativa e a economia circular podem potencializar essas oportunidades. Mas é indispensável que diferentes setores e pessoas se articulem para evitar que uma transformação digital mal conduzida cause mais desigualdade social.",
+      "titulo": "Fomentar o desenvolvimento econômico local no contexto da transformação digital",
+      "contexto": "Uma governança bem estruturada, colaborativa e inclusiva torna as cidades mais habitáveis e fortalece a economia local. O mesmo ocorre quando as decisões são tomadas com base em dados e evidências científicas. A transformação digital pode gerar valor, emprego e renda para as pessoas das cidades. A economia do compartilhamento, a economia criativa e a economia circular podem potencializar essas oportunidades. Mas é indispensável que diferentes setores e pessoas se articulem para evitar que uma transformação digital mal conduzida cause mais desigualdade social."
+    },
+    "6": {
+      "objetivo": 6,
+      "pagina_inicio": 35,
+      "pagina_fim": 35,
+      "texto_completo": "Estimular modelos e instrumentos de financiamento do desenvolvimento urbano sustentável no contexto da transformação digital Contexto › Recursos financeiros viabilizam, aceleram e potencializam os processos de desenvolvimento econômico e urbano sustentáveis. Os recursos são necessários para implementar ambientes de estímulo à inovação, à pesquisa e à implantação de infraestruturas. Estado e sociedade devem trabalhar juntos, seguindo na mesma direção. A ação conjunta deve incluir bancos públicos, investidores privados, instituições financeiras e de fomento, agências de apoio à pesquisa e inovação. O trabalho em colaboração irá identificar, sistematizar, criar e disponibilizar instrumentos, linhas diversificadas de financiamento e soluções de autofinanciamento da transformação digital. Todas as ações devem estar associadas ao desenvolvimento urbano sustentável.",
+      "titulo": "Estimular modelos e instrumentos de financiamento do desenvolvimento urbano sustentável no contexto da transformação digital",
+      "contexto": "Recursos financeiros viabilizam, aceleram e potencializam os processos de desenvolvimento econômico e urbano sustentáveis. Os recursos são necessários para implementar ambientes de estímulo à inovação, à pesquisa e à implantação de infraestruturas. Estado e sociedade devem trabalhar juntos, seguindo na mesma direção. A ação conjunta deve incluir bancos públicos, investidores privados, instituições financeiras e de fomento, agências de apoio à pesquisa e inovação. O trabalho em colaboração irá identificar, sistematizar, criar e disponibilizar instrumentos, linhas diversificadas de financiamento e soluções de autofinanciamento da transformação digital. Todas as ações devem estar associadas ao desenvolvimento urbano sustentável."
+    },
+    "7": {
+      "objetivo": 7,
+      "pagina_inicio": 35,
+      "pagina_fim": 35,
+      "texto_completo": "Fomentar um movimento massivo e inovador de educação e comunicação públicas para maior engajamento da sociedade no processo de transformação digital e de desenvolvimento urbano sustentáveis Contexto › Por outro lado, pessoas, coletivos e organizações devem fazer a transição de usuários passivos para agentes da transformação. Devem ser agentes conscientes e criadores das próprias realidades. Isso requer novas capacidades, habilidades e atitudes. Trata-se de uma tarefa coletiva e desafiadora. Logo, ela deve ser apoiada por um movimento educativo massivo sobre a transformação digital nas cidades. Essa tarefa também requer um processo de comunicação qualificado para engajar, sincronizar, coordenar e articular distintos agentes públicos e privados em torno dos objetivos da Carta. Entre os agentes, devem constar organizações da sociedade civil, veículos de comunicação, instituições de ensino e pesquisa.",
+      "titulo": "Fomentar um movimento massivo e inovador de educação e comunicação públicas para maior engajamento da sociedade no processo de transformação digital e de desenvolvimento urbano sustentáveis",
+      "contexto": "Por outro lado, pessoas, coletivos e organizações devem fazer a transição de usuários passivos para agentes da transformação. Devem ser agentes conscientes e criadores das próprias realidades. Isso requer novas capacidades, habilidades e atitudes. Trata-se de uma tarefa coletiva e desafiadora. Logo, ela deve ser apoiada por um movimento educativo massivo sobre a transformação digital nas cidades. Essa tarefa também requer um processo de comunicação qualificado para engajar, sincronizar, coordenar e articular distintos agentes públicos e privados em torno dos objetivos da Carta. Entre os agentes, devem constar organizações da sociedade civil, veículos de comunicação, instituições de ensino e pesquisa."
+    },
+    "8": {
+      "objetivo": 8,
+      "pagina_inicio": 36,
+      "pagina_fim": 36,
+      "texto_completo": "Construir meios para compreender e avaliar, de forma contínua e sistêmica, os impactos da transformação digital nas cidades Contexto › Finalmente, precisamos assimilar e aprender com as transformações enquanto elas acontecem, pois são fatos novos, dinâmicos, inéditos e ainda pouco estudados. É necessário compreender e avaliar os impactos sistêmicos (impactos no nosso sistema social, ambiental, econômico, político) que o processo de transformação digital causa nas cidades. Isso deve ser feito de forma contínua e estruturada, a partir de uma abordagem complexa e sistêmica. A avaliação dos impactos é uma tarefa essencial para identificar novos desafios e corrigir os rumos desta agenda ao longo da sua implementação. Tamanha tarefa só será possível com a união de diferentes pessoas e com a valorização dos saberes locais e comunitários.",
+      "titulo": "Construir meios para compreender e avaliar, de forma contínua e sistêmica, os impactos da transformação digital nas cidades",
+      "contexto": "Finalmente, precisamos assimilar e aprender com as transformações enquanto elas acontecem, pois são fatos novos, dinâmicos, inéditos e ainda pouco estudados. É necessário compreender e avaliar os impactos sistêmicos (impactos no nosso sistema social, ambiental, econômico, político) que o processo de transformação digital causa nas cidades. Isso deve ser feito de forma contínua e estruturada, a partir de uma abordagem complexa e sistêmica. A avaliação dos impactos é uma tarefa essencial para identificar novos desafios e corrigir os rumos desta agenda ao longo da sua implementação. Tamanha tarefa só será possível com a união de diferentes pessoas e com a valorização dos saberes locais e comunitários."
+    }
+  },
+  "recomendacoes": [
+    {
+      "recomendacao_id": "1.1",
+      "objetivo": 1,
+      "pagina_inicio": 37,
+      "pagina_fim": 37,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "AR",
+        "ET"
+      ],
+      "texto": "Desigualdade digital e política urbana: Usar o acesso à internet de qualidade como um indicador de desigualdade socioespacial na política urbana. Reconhecer pelo indicador que há um déficit de conectividade que deve ser enfrentado em políticas, programas, projetos e ações de desenvolvimento urbano sustentável e de telecomunicações. Essas iniciativas devem estar alinhadas com o Plano Estratégico da Anatel 2015-2024 e com a Estratégia Brasileira para a Transformação Digital E-digital."
+    },
+    {
+      "recomendacao_id": "1.1.1",
+      "objetivo": 1,
+      "pagina_inicio": 38,
+      "pagina_fim": 38,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIH",
+        "AR",
+        "ET",
+        "SP"
+      ],
+      "texto": "Infraestrutura digital como infraestrutura urbana básica: Planejar e implementar a infraestrutura digital como parte da infraestrutura básica da cidade. Essas ações devem ser facilitadas inclusive por meio de alteração à lei do parcelamento do solo urbano (Lei no 6.766/1979) e de outras normas gerais de política urbana. Tais alterações devem convergir com normas e diretrizes da União relativas aos serviços de telecomunicações e sua respectiva infraestrutura de suporte. A integração da infraestrutura digital na infraestrutura urbana básica contribuirá para alcançar os objetivos da Estratégia Brasileira para a Transformação Digital (Decreto no 9.319/2018 - E-Digital)."
+    },
+    {
+      "recomendacao_id": "1.1.2",
+      "objetivo": 1,
+      "pagina_inicio": 38,
+      "pagina_fim": 38,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Informações sobre exclusão digital: Entender melhor os fatores associados à exclusão digital. Exemplos: (1) compreender quais são as condições de conectividade dos grupos vulneráveis; e (2) compreender quais são as condições de conexão em cada localização. Para isso, usar dados georreferenciados (com localização geográfica) separados por critérios como renda, raça, gênero, escolaridade e idade. Incluir análises específicas para as pessoas com deficiência. O uso e tratamento dos dados deve respeitar a legislação sobre proteção de dados pessoais (LGPD)."
+    },
+    {
+      "recomendacao_id": "1.2",
+      "objetivo": 1,
+      "pagina_inicio": 38,
+      "pagina_fim": 38,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Visão de território para o desenvolvimento urbano sustentável:"
+    },
+    {
+      "recomendacao_id": "1.2.1",
+      "objetivo": 1,
+      "pagina_inicio": 38,
+      "pagina_fim": 39,
+      "publicos": [
+        "GF",
+        "CIV",
+        "IEP",
+        "IFF"
+      ],
+      "texto": "Tipologias urbanas: Estabelecer tipologias (categorias) de território que apoiem a compreensão do urbano no Brasil. Esse trabalho deve ser feito no processo de formulação da Política Nacional de Desenvolvimento Urbano (PNDU). Deve compreender o território a partir de diferentes níveis: municipal, supramunicipal (agrupamento de municípios) e regional. As tipologias também devem se adequar à diversidade territorial do país. O objetivo é orientar agendas, programas e iniciativas para o desenvolvimento urbano sustentável, inclusive de cidades inteligentes, nos três níveis (municipal, supramunicipal e regional)."
+    },
+    {
+      "recomendacao_id": "1.2.2",
+      "objetivo": 1,
+      "pagina_inicio": 39,
+      "pagina_fim": 39,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "OSC"
+      ],
+      "texto": "Instrumentos e metodologias para a diversidade territorial: Desenvolver e adaptar instrumentos e metodologias de informação, planejamento, gestão e governança para o desenvolvimento urbano sustentável, considerando diferentes graus de complexidade. Esses instrumentos e metodologias devem ser adequados às tipologias (categorias de territórios) da Política Nacional de Desenvolvimento (PNDU). Devem considerar a diversidade territorial das cidades brasileiras. Devem ser fáceis de implementar, considerando diferentes capacidades presentes no nível local."
+    },
+    {
+      "recomendacao_id": "1.2.3",
+      "objetivo": 1,
+      "pagina_inicio": 39,
+      "pagina_fim": 39,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "OSC"
+      ],
+      "texto": "Visão de contexto: Estimular a atuação local com visão de contexto, disponibilizando ferramentas para facilitar que os municípios percebam seus próprios contextos e inserções regionais. O objetivo é qualificar o planejamento e a gestão integrada de suas áreas urbanas, rurais e naturais. Deve haver articulação com outros municípios e demais entes federados (União, Estados, Municípios e Distrito Federal). Essas ações devem estar em linha com a Política Nacional de Desenvolvimento Regional (PNDR) e com a Política Nacional de Desenvolvimento Urbano (PNDU)."
+    },
+    {
+      "recomendacao_id": "1.2.4",
+      "objetivo": 1,
+      "pagina_inicio": 40,
+      "pagina_fim": 40,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "SP",
+        "OSC"
+      ],
+      "texto": "Visão de futuro da cidade: Construir a visão de futuro da cidade de forma participativa e inclusiva. Estabelecer essa visão em instrumentos de planejamento municipal (exemplos: Plano Diretor - PD, Plano Plurianual - PPA, Lei de Diretrizes Orçamentárias - LDO, Lei Orçamentária Anual - LOA). Na construção da visão de futuro, considerar a perspectiva e os impactos específicos da transformação digital no território da cidade. Considerar também o contexto regional e as características locais nos aspectos econômico-financeiro, sociocultural, urbano-ambiental e político-institucional. Refletir a visão em metas, com etapas, atividades e prazos associados."
+    },
+    {
+      "recomendacao_id": "1.2.5",
+      "objetivo": 1,
+      "pagina_inicio": 40,
+      "pagina_fim": 40,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "IFF"
+      ],
+      "texto": "Articulação setorial no território: Desenvolver estratégias para que as políticas, planos e programas de desenvolvimento urbano e de setores afins sejam integradas no território, em todos os níveis de governo. As estratégias devem enfatizar as áreas de urbanismo, habitação, saneamento básico (abastecimento de água potável, esgotamento sanitário, limpeza urbana e manejo de resíduos sólidos, drenagem e manejo das águas pluviais urbanas), mobilidade urbana, segurança hídrica, redução de desastres, meio ambiente e tecnologias de informação e comunicação (TICs)."
+    },
+    {
+      "recomendacao_id": "1.3",
+      "objetivo": 1,
+      "pagina_inicio": 40,
+      "pagina_fim": 41,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "IFF"
+      ],
+      "texto": "Transformação digital e setores urbanos: Desenvolver metodologia para mapear necessidades específicas das políticas setoriais urbanas que possam ser apoiadas por soluções digitais. As ações devem incluir infraestrutura e dispositivos digitais, bem como dados e informações georreferenciadas (com localização geográfica). Também devem estar em linha com a diversidade territorial e com as tipologias municipais e supramunicipais (agrupamentos de municípios) da Política Nacional de Desenvolvimento Urbano (PNDU). O objetivo é possibilitar o planejamento e a implementação de projetos e ações locais integradas."
+    },
+    {
+      "recomendacao_id": "1.3.1",
+      "objetivo": 1,
+      "pagina_inicio": 41,
+      "pagina_fim": 41,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "AR",
+        "EC",
+        "ET",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Estratégias setoriais para transformação digital: Elaborar estratégias setoriais para a transformação digital nas cidades, nas áreas de urbanismo, habitação, saneamento básico (abastecimento de água potável, esgotamento sanitário, limpeza urbana e manejo de resíduos sólidos, drenagem e manejo das águas pluviais urbanas), mobilidade urbana, segurança hídrica, redução de desastres, meio ambiente e tecnologias de informação e comunicação (TICs). As estratégias devem: (1) ser elaboradas com base em metodologia única que permita sua consolidação em uma estratégia global; (2) ser elaboradas de forma alinhada com esta Carta; (3) ser desenvolvidas pelos respectivos setores, com apoio da Comunidade da Carta. Os objetivos são: (a) identificar, organizar e endereçar demandas específicas de cada setor; e (b) permitir uma visão global que evite sobreposições e otimize esforços no território."
+    },
+    {
+      "recomendacao_id": "1.3.2",
+      "objetivo": 1,
+      "pagina_inicio": 41,
+      "pagina_fim": 41,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "AR",
+        "EC",
+        "SP",
+        "IEP",
+        "IFF"
+      ],
+      "texto": "Eficiência energética e economia circular: Desenvolver projetos, utilizar mecanismos e tecnologias que ampliem a eficiência energética de infraestruturas e edifícios urbanos. Promover processos e desenvolver soluções que incorporem a lógica da economia circular (aproveitamento de resíduos). O objetivo é promover o uso responsável dos recursos naturais e garantir a qualidade de vida das pessoas das atuais e futuras gerações."
+    },
+    {
+      "recomendacao_id": "1.4",
+      "objetivo": 1,
+      "pagina_inicio": 42,
+      "pagina_fim": 42,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "SP",
+        "IEP",
+        "OSC"
+      ],
+      "texto": "Transformação digital e meio ambiente: Desenvolver e usar metodologias, dados e indicadores que respondam às mudanças ambientais e climática (aumento da temperatura média global com aumento da ocorrência de eventos climáticos extremos). Atuar nas frentes de adaptação (como prevenção a eventos climáticos extremos – deslizamentos, inundações, secas, erosões etc.) e de mitigação (redução de emissões de carbono)."
+    },
+    {
+      "recomendacao_id": "1.4.1",
+      "objetivo": 1,
+      "pagina_inicio": 42,
+      "pagina_fim": 42,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "EC",
+        "SP",
+        "IEP",
+        "IFF"
+      ],
+      "texto": "Dispositivos digitais no ambiente urbano: Estimular o uso de metodologias, dados e indicadores, digitais ou não, para monitorar e avaliar os impactos ambientais causados por infraestruturas e dispositivos digitais nos ambientes urbanos. Promover o uso responsável de recursos nas soluções de modernização tecnológica de serviços urbanos. O objetivo é reduzir a pegada de carbono na transformação digital das cidades."
+    },
+    {
+      "recomendacao_id": "1.4.2",
+      "objetivo": 1,
+      "pagina_inicio": 42,
+      "pagina_fim": 42,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "EC",
+        "SP",
+        "IEP",
+        "IFF"
+      ],
+      "texto": "Instrumentos ambientais: Introduzir o conceito e desenvolver projetos de infraestrutura verde em áreas urbanas. Sempre que possível, substituir a infraestrutura cinza pela infraestrutura verde. Integrar as perspectivas de serviços ecossistêmicos e de soluções baseadas na natureza nos instrumentos de política urbana. Estimular o desenvolvimento de regiões produtoras de alimentos próximas dos centros urbanos. Utilizar as TICs para estimular padrões responsáveis de produção e consumo e ativação da economia local."
+    },
+    {
+      "recomendacao_id": "1.4.3",
+      "objetivo": 1,
+      "pagina_inicio": 43,
+      "pagina_fim": 43,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "IEP"
+      ],
+      "texto": "Riscos e vulnerabilidades no espaço urbano: Desenvolver metodologias para identificar e definir os riscos e as vulnerabilidades no espaço urbano, subsidiar a tomada de decisões e desenvolver planos de contingência. Para isso, usar dados e informações coletadas pelas tecnologias de informação e comunicação (TICs). O objetivo é ampliar a resiliência das cidades."
+    },
+    {
+      "recomendacao_id": "1.5",
+      "objetivo": 1,
+      "pagina_inicio": 43,
+      "pagina_fim": 43,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "EC",
+        "ET",
+        "SP",
+        "IEP",
+        "OSC"
+      ],
+      "texto": "Transformação digital e política urbana: Desenvolver, usar e compartilhar soluções digitais que ajudem a implementar instrumentos de informação, planejamento, gestão e governança voltados ao desenvolvimento urbano sustentável, em diferentes escalas do território. As soluções digitais devem aumentar a eficácia e a efetividade desses instrumentos. Também devem estar alinhadas com a diversidade territorial e com as tipologias municipal, supramunicipal (agrupamentos de municípios) e regional da Política Nacional de Desenvolvimento Urbano (PNDU)."
+    },
+    {
+      "recomendacao_id": "1.5.1",
+      "objetivo": 1,
+      "pagina_inicio": 43,
+      "pagina_fim": 43,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "EC",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Dados e informações para o desenvolvimento urbano sustentável: Formular, implementar, monitorar e avaliar políticas, programas, projetos e ações de desenvolvimento urbano que sejam baseados em dados e informações públicas e auditáveis (que podem ser verificadas em uma auditoria)."
+    },
+    {
+      "recomendacao_id": "1.5.1.1",
+      "objetivo": 1,
+      "pagina_inicio": 43,
+      "pagina_fim": 44,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "AR",
+        "EC",
+        "ET",
+        "IFF"
+      ],
+      "texto": "TICs para o diagnóstico e a gestão urbana: Usar ferramentas de geoprocessamento (processamento de dados com localização geográfica) para entender melhor os fenômenos urbanos e para aperfeiçoar a capacidade de gestão dos governos locais. Incorporar nessas ações mecanismos inovadores da ciência de dados. Exemplos: (1) Inteligência Artificial (AI); e (2) análise de grandes quantidades de dados anonimizados (sem elementos que identifiquem as pessoas), conhecidos como Big Data. Respeitar a Lei Geral de Proteção de Dados Pessoais (LGPD). [Ver recomendação 3.2.]"
+    },
+    {
+      "recomendacao_id": "1.5.1.2",
+      "objetivo": 1,
+      "pagina_inicio": 44,
+      "pagina_fim": 44,
+      "publicos": [
+        "GF",
+        "CIV",
+        "CIH",
+        "IEP"
+      ],
+      "texto": "Sistema nacional de informações para o desenvolvimento urbano: Identificar, sistematizar e disponibilizar dados e informações públicas que sejam relevantes para o desenvolvimento urbano sustentável. Esses dados e informações devem ser elaborados para formular, implementar e monitorar a Política Nacional de Desenvolvimento Urbano (PNDU). Essas ações têm duas finalidades: (1) apoiar a implementação de iniciativas locais pelos entes federados (União, Estados, Distrito Federal e Municípios) e órgãos interfederativos (que representam mais de um ente federado); e (2) atender ao Art. 16-A do Estatuto da Metrópole. [ver recomendação 3.9.]"
+    },
+    {
+      "recomendacao_id": "1.5.1.3",
+      "objetivo": 1,
+      "pagina_inicio": 44,
+      "pagina_fim": 45,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "EC",
+        "SP"
+      ],
+      "texto": "Integração de dados para a política urbana: Promover a constante integração de setores e instituições para o intercâmbio de dados, como os dados fiscais, de serviços urbanos e de registros imobiliários. Essa integração permitirá entender melhor o uso e a ocupação do solo urbano. Essas ações irão viabilizar a aplicação de instrumentos de política urbana, como o Imposto Predial e Territorial Urbano (IPTU) progressivo no tempo e o Parcelamento, Edificação e Utilização Compulsório (PEUC)."
+    },
+    {
+      "recomendacao_id": "1.5.1.4",
+      "objetivo": 1,
+      "pagina_inicio": 45,
+      "pagina_fim": 45,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "IEP",
+        "OSC"
+      ],
+      "texto": "Mapeamento de áreas verdes urbanas e serviços ecossistêmicos: Apoiar os municípios e órgãos interfederativos (que representam mais de um ente federado - União, Estados, Distrito Federal e Municípios) a mapear as suas áreas verdes urbanas. Essa ação contribuirá com a meta 11.7 do Objetivo de Desenvolvimento Sustentável 11 da Agenda 2030 da ONU. Além das áreas verdes urbanas, apoiar municípios e órgãos interfederativos a mapear, atribuir valor financeiro e gerir de forma responsável seus recursos naturais e serviços ecossistêmicos. Para isso, disponibilizar sistema e metodologia de cadastro que sejam unificados em âmbito nacional."
+    },
+    {
+      "recomendacao_id": "1.5.1.5",
+      "objetivo": 1,
+      "pagina_inicio": 45,
+      "pagina_fim": 45,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "IEP",
+        "IFF"
+      ],
+      "texto": "Cadastros territoriais integrados: Apoiar municípios e órgãos interfederativos (que representam mais de um ente federativo - União, Estados, Distrito Federal e Municípios) a elaborar, revisar e integrar as suas bases territoriais. Essas bases podem ser bases cartográficas, cadastros imobiliários ou Cadastros Técnicos Multifinalitários (de diversas finalidades) – CTM. Além disso, apoiar a integração dessas bases com os sistemas de informações geográficas locais. Essas ações devem se basear em metodologias e recursos adequados às diferentes realidades e às tipologias municipais e supramunicipais (agrupamentos de municípios) da Política Nacional de Desenvolvimento Urbano (PNDU)."
+    },
+    {
+      "recomendacao_id": "1.5.1.6",
+      "objetivo": 1,
+      "pagina_inicio": 46,
+      "pagina_fim": 46,
+      "publicos": [
+        "GM",
+        "CIV",
+        "CIH",
+        "SP",
+        "IEP",
+        "OSC"
+      ],
+      "texto": "Mapeamentos colaborativos: Ampliar o uso de ferramentas de mapeamento colaborativo na gestão pública como estratégia para mobilizar saberes e engajamento comunitários. Essas ferramentas também são estratégicas no controle social das políticas públicas, especialmente para levantar necessidades habitacionais, bens comuns, ativos urbanos, ambientais e culturais de interesse coletivo. Além disso, contribuem para identificar e gerir conflitos urbanos. Essas ferramentas devem incluir tecnologias assistivas, de forma a possibilitar a participação da pessoa com deficiência ou mobilidade reduzida. Nessas ações, privilegiar o uso de plataformas e ferramentas gratuitas e de código aberto, como o OpenStreetMap. [Ver recomendação 3.9]"
+    },
+    {
+      "recomendacao_id": "1.5.2",
+      "objetivo": 1,
+      "pagina_inicio": 46,
+      "pagina_fim": 46,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "EC",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Planejamento do desenvolvimento urbano sustentável:"
+    },
+    {
+      "recomendacao_id": "1.5.2.1",
+      "objetivo": 1,
+      "pagina_inicio": 46,
+      "pagina_fim": 46,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "SP",
+        "IEP",
+        "OSC"
+      ],
+      "texto": "Medidas para o alcance da visão de futuro: Elaborar ou revisar normas, políticas, programas e estratégias para adequá-los à visão de futuro da cidade, conforme estabelecido nos instrumentos de planejamento municipal (exemplos: Plano Diretor - PD, Plano Plurianual - PPA, Lei de Diretrizes Orçamentárias - LDO, Lei Orçamentária Anual - LOA). Essa adequação irá garantir que os projetos urbanos, inclusive iniciativas de cidades inteligentes, contribuam para realizar a visão de futuro. [Ver recomendação 1.2.4]"
+    },
+    {
+      "recomendacao_id": "1.5.2.2",
+      "objetivo": 1,
+      "pagina_inicio": 47,
+      "pagina_fim": 47,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "EC",
+        "IFF"
+      ],
+      "texto": "Intersetorialidade no planejamento urbano: Construir e consolidar uma visão integrada do planejamento municipal com base nos instrumentos de planejamento setorial. Enfatizar as áreas de urbanismo, habitação, saneamento básico (abastecimento de água potável, esgotamento sanitário, limpeza urbana e manejo de resíduos sólidos, drenagem e manejo das águas pluviais urbanas), mobilidade urbana, segurança hídrica, redução de desastres, meio ambiente e tecnologias de informação e comunicação (TICs). Exemplo de instrumentos de tecnologias de informação e comunicação nas cidades: Plano Diretor de Cidades Inteligentes e Plano Diretor de TICs. O objetivo é possibilitar que as iniciativas sejam implementadas de forma coordenada no território, usando mecanismos locais de gestão e governança. Para isso, devem ser incluídos mecanismos de dados e informações."
+    },
+    {
+      "recomendacao_id": "1.5.2.3",
+      "objetivo": 1,
+      "pagina_inicio": 47,
+      "pagina_fim": 47,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "EC",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Planejamento urbano interfederativo: Apoiar processos de planejamento urbano integrado e intersetorial (com cooperação entre as diferentes áreas de política pública) nas seguintes realidades: (1) regiões metropolitanas, (2) municípios conurbados (municípios com zonas urbanas unidas) e (3) municípios que apresentem relações de interdependência porque compartilham funções públicas de interesse comum. Esses processos de planejamento devem ser integrados de duas formas: pela elaboração de Planos de Desenvolvimento Urbano Integrado (PDUIs) ou pela elaboração conjunta e simultânea de Planos Diretores municipais (PDs). Ao elaborar os planos, é necessário articular dados, ferramentas, estratégias e as abordagens setoriais que façam parte dos planos municipais específicos."
+    },
+    {
+      "recomendacao_id": "1.5.2.4",
+      "objetivo": 1,
+      "pagina_inicio": 48,
+      "pagina_fim": 48,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "SP",
+        "IEP",
+        "IFF"
+      ],
+      "texto": "Planejamento na escala de projetos urbanos: Desenvolver, consolidar e disseminar metodologias para elaborar projetos na escala intermediária da cidade (regiões, conjuntos de bairros ou outro agrupamento de áreas que seja menor que o território municipal). O objetivo é implementar processos de renovação urbana, de estruturação urbana ou de expansão urbana. Usar os projetos como oportunidades para distribuir infraestruturas para inclusão digital no espaço urbano. Na elaboração desses projetos, observar os princípios de desenho universal (que viabiliza o uso por todas as pessoas) e as normas de acessibilidade (Estatuto da Pessoa com Deficiência, Art. 55)."
+    },
+    {
+      "recomendacao_id": "1.5.3",
+      "objetivo": 1,
+      "pagina_inicio": 48,
+      "pagina_fim": 49,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "AR",
+        "EC",
+        "ET",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Gestão e governança para o desenvolvimento urbano sustentável: [ver Objetivos Estratégicos 3 e 4]. Prover acesso equitativo à internet de qualidade para todas as pessoas"
+    },
+    {
+      "recomendacao_id": "2.1",
+      "objetivo": 2,
+      "pagina_inicio": 49,
+      "pagina_fim": 49,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "AR",
+        "ET",
+        "SP",
+        "IEP",
+        "OSC"
+      ],
+      "texto": "Direito de acesso à internet: Reconhecer e tornar efetivo o direito de acesso à internet por todas as pessoas (Marco Civil da Internet no Brasil, Art. 4o). Para isso, desenvolver e implantar políticas, programas e projetos de infraestrutura. Incluir nessas ações projetos da infraestrutura de suporte para redes de telecomunicações, indispensável para a prestação dos serviços de telecomunicações e internet. Incluir também outros aspectos relacionados à inclusão digital. Essas ações devem ser feitas respeitando as diretrizes nacionais editadas pela União Federal e Agências Reguladoras."
+    },
+    {
+      "recomendacao_id": "2.2",
+      "objetivo": 2,
+      "pagina_inicio": 49,
+      "pagina_fim": 50,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "AR",
+        "ET"
+      ],
+      "texto": "Infraestrutura digital para todas as pessoas: Viabilizar a instalação e a manutenção da infraestrutura para inclusão digital em regiões do país que carecem dessa infraestrutura e em áreas municipais com baixa conectividade. Manter a infraestrutura atualizada de forma a garantir a inclusão digital em todas as cidades, de forma permanente. Nessas ações, enfatizar os núcleos urbanos informais e as localidades afastadas. Respeitar as prioridades definidas nas políticas nacionais de desenvolvimento regional, de desenvolvimento urbano e de telecomunicações."
+    },
+    {
+      "recomendacao_id": "2.2.1",
+      "objetivo": 2,
+      "pagina_inicio": 50,
+      "pagina_fim": 50,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "AR",
+        "ET",
+        "SP"
+      ],
+      "texto": "Editais de faixas de frequência: Prever contrapartidas para ampliação da infraestrutura para inclusão digital nos editais de faixas de frequência de serviços de telecomunicações. Priorizar o atendimento de áreas que carecem de infraestrutura de qualidade e o atendimento a todas as cidades e comunidades do país. Os municípios devem acompanhar e viabilizar as implantações decorrentes de leilão de faixas de frequência."
+    },
+    {
+      "recomendacao_id": "2.3",
+      "objetivo": 2,
+      "pagina_inicio": 50,
+      "pagina_fim": 50,
+      "publicos": [
+        "GF",
+        "GM",
+        "AR",
+        "SP",
+        "IEP",
+        "OSC"
+      ],
+      "texto": "Meios diversos de acesso à internet: Incentivar e apoiar o estabelecimento de redes compartilhadas e comunitárias e outros meios alternativos de conexão e acesso à internet. Essas ações devem ser feitas incluindo o uso de Rádio e TV digitais, redes locais e pequenos provedores de Internet. Para isso, estabelecer parcerias com o setor privado, comunidades e organizações da sociedade civil. Essas parcerias devem ter como objetivos oferecer formação, garantir conhecimento técnico e fortalecer os elos comunitários através de infraestruturas de conectividade."
+    },
+    {
+      "recomendacao_id": "2.3.1",
+      "objetivo": 2,
+      "pagina_inicio": 50,
+      "pagina_fim": 51,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "AR",
+        "ET",
+        "SP",
+        "IEP"
+      ],
+      "texto": "Iniciativas locais de conexão e soluções digitais: Estabelecer mecanismos junto às agências reguladoras para a realização de estudos, experiências e testes de alocação de faixas do espectro eletromagnético para utilização aberta. Os objetivos são: (1) democratizar o acesso à comunicação sem fio; (2) possibilitar o desenvolvimento de iniciativas locais de conexão; e possibilitar o desenvolvimento local de soluções digitais para problemas comunitários."
+    },
+    {
+      "recomendacao_id": "2.4",
+      "objetivo": 2,
+      "pagina_inicio": 51,
+      "pagina_fim": 51,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM"
+      ],
+      "texto": "Enfrentamento da exclusão digital: Promover soluções para os diferentes fatores de exclusão digital nas estratégias de universalização e democratização do acesso à internet e a tecnologias digitais. Essas ações devem estar alinhadas com a Estratégia Brasileira de Transformação Digital, para ajudar a alcançar suas metas."
+    },
+    {
+      "recomendacao_id": "2.4.1",
+      "objetivo": 2,
+      "pagina_inicio": 51,
+      "pagina_fim": 51,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "ET",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Inclusão digital de pessoas com deficiência: Criar e usar soluções, elaborar e difundir normas e procedimentos para ampliar a acessibilidade da pessoa com deficiência à computação e à internet. Realizar essas ações também na oferta de serviços públicos digitais e outras iniciativas de governo digital (Estatuto da Pessoa com Deficiência, Art. 78). Estimular o desenvolvimento de soluções técnicas previstas no Plano Nacional de Internet das Coisas (Decreto 9.854/2019)."
+    },
+    {
+      "recomendacao_id": "2.4.2",
+      "objetivo": 2,
+      "pagina_inicio": 51,
+      "pagina_fim": 51,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "ET",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Inclusão digital na perspectiva de gênero: Cumprir as metas nacionais para garantir a igualdade de gênero nas seguintes situações: (1) no acesso, nas habilidades de uso e na produção de tecnologias da informação e comunicação; (2) no acesso e na produção do conhecimento científico; e (3) no acesso e na produção de informação, conteúdos de comunicação e mídias (Agenda 2030, ODS 5, 5.b)."
+    },
+    {
+      "recomendacao_id": "2.4.3",
+      "objetivo": 2,
+      "pagina_inicio": 52,
+      "pagina_fim": 52,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "AR",
+        "EC",
+        "ET",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Letramento digital: [ver Objetivo Estratégico 7]"
+    },
+    {
+      "recomendacao_id": "2.5",
+      "objetivo": 2,
+      "pagina_inicio": 52,
+      "pagina_fim": 52,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "SP",
+        "OSC"
+      ],
+      "texto": "Integração urbano-digital: Planejar e implementar as ações municipais de transformação digital de forma articulada com o planejamento territorial local. Para isso, observar as necessidades e a visão de futuro da cidade estabelecida no plano diretor ou em outros instrumentos de planejamento territorial. Se for necessário, adequar normas, políticas, programas, planos e estratégias."
+    },
+    {
+      "recomendacao_id": "2.5.1",
+      "objetivo": 2,
+      "pagina_inicio": 52,
+      "pagina_fim": 52,
+      "publicos": [
+        "GF",
+        "CIH"
+      ],
+      "texto": "Desenvolvimento urbano sustentável nas estratégias nacionais de TICs: Integrar o desenvolvimento urbano sustentável e os desafios da transformação digital nas cidades na Estratégia Nacional de Ciência e Tecnologia e na Estratégia Brasileira para a Transformação Digital (E-Digital)."
+    },
+    {
+      "recomendacao_id": "2.5.2",
+      "objetivo": 2,
+      "pagina_inicio": 52,
+      "pagina_fim": 52,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "AR",
+        "ET",
+        "SP"
+      ],
+      "texto": "Transparência nos dados de conectividade digital: Disponibilizar dados de conectividade digital (tais como banda larga, dispositivos móveis e internet por satélite) nas escalas intramunicipal (dentro dos limites municipais) e intraurbana (dentro da mancha urbana). Garantir que esses dados possam ser georreferenciados (ter a localização geográfica). Apresentar e disponibilizar os dados em linguagem inclusiva, de forma transparente e fácil de usar. Além disso, disponibilizar dados e estatísticas sobre acessos e atendimentos completos à população relacionados a serviços públicos digitais. Com essas atividades, será possível planejar ações de transformação digital na escala municipal."
+    },
+    {
+      "recomendacao_id": "2.5.3",
+      "objetivo": 2,
+      "pagina_inicio": 53,
+      "pagina_fim": 53,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH"
+      ],
+      "texto": "Tipologias para “cidades inteligentes”: Reconhecer as diferentes características das cidades brasileiras, inclusive quanto ao acesso a tecnologias da informação e comunicação (TICs). A partir desse reconhecimento, tratar os municípios de forma diferenciada nas iniciativas de “cidades inteligentes”. Para isso, usar as tipologias (categorias de território) da Política Nacional de Desenvolvimento Urbano (PNDU). Com essas ações, será possível agir de modo a reduzir desigualdades de acesso à internet nas escalas intramunicipal (dentro dos limites municipais), intraurbana (dentro da mancha urbana), municipal (entre municípios), supramunicipal (entre conjuntos de municípios) e regional (entre regiões)."
+    },
+    {
+      "recomendacao_id": "2.5.4",
+      "objetivo": 2,
+      "pagina_inicio": 53,
+      "pagina_fim": 53,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Planejamento para “cidades inteligentes”: Considerar as determinações do Plano Diretor (ver Estatuto da Cidade) ao elaborar estratégias e planos municipais para a transformação digital. Da mesma forma, considerar as determinações do Plano de Desenvolvimento Urbano Integrado (Estatuto da Metrópole), caso exista. Alinhar o planejamento para “cidades inteligentes” com as recomendações desta Carta e seus desdobramentos em termos de normas, diretrizes e padrões. Exemplos de planos municipais para a transformação digital: Plano Diretor de Cidades Inteligentes e Plano Diretor de Tecnologias de Informação e Comunicação–TICs."
+    },
+    {
+      "recomendacao_id": "2.5.5",
+      "objetivo": 2,
+      "pagina_inicio": 53,
+      "pagina_fim": 54,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Conectividade digital e integração de equipamentos públicos: Fortalecer iniciativas que integrem instituições e equipamentos públicos de ensino e pesquisa. Para isso, formar parcerias entre instituições de modo a prover redes de infraestrutura digital. Ampliar o modelo de Redes Comunitárias de Ensino e Pesquisa para instituições e equipamentos públicos que atendam outras finalidades."
+    },
+    {
+      "recomendacao_id": "2.5.6",
+      "objetivo": 2,
+      "pagina_inicio": 54,
+      "pagina_fim": 54,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "EC",
+        "ET",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Wi-Fi livre: Providenciar redes de Wi-Fi livre, seguro e de qualidade em equipamentos e espaços públicos, especialmente em áreas remotas e de baixa renda. Garantir segurança cibernética e proteção geral de dados pessoais nesses acessos. Buscar viabilizar o acesso a plataformas e aplicativos de serviços essenciais (exemplos: serviços públicos digitais, educação, saúde, mobilidade) sem consumo de dados móveis. Essa ação deve ser voltada a pessoas e grupos sociais vulneráveis, como ferramenta de inclusão social. Assegurar a ampliação do espectro de frequências de uso para novas redes Wi-Fi com mais capacidade, mais rápidas e eficientes."
+    },
+    {
+      "recomendacao_id": "2.6",
+      "objetivo": 2,
+      "pagina_inicio": 54,
+      "pagina_fim": 54,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "AR",
+        "EC",
+        "ET",
+        "OSC"
+      ],
+      "texto": "Solo, subsolo e espaço aéreo, mobiliário urbano e implantação de infraestrutura de TICs: Estabelecer normas e padrões para o planejamento, a utilização e a gestão do subsolo, do solo e do espaço aéreo nos municípios. Estabelecer normas e padrões também para a localização e o compartilhamento de infraestrutura para inclusão digital nas cidades (exemplos: postes, torres e dutos). Essas ações devem respeitar as normas gerais de telecomunicações editadas pela União. Disseminar melhores práticas relativas a normas, padrões e procedimentos adotados por municípios e outros níveis de governo."
+    },
+    {
+      "recomendacao_id": "2.6.1",
+      "objetivo": 2,
+      "pagina_inicio": 55,
+      "pagina_fim": 55,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "AR",
+        "SP"
+      ],
+      "texto": "Ações integradas no território: Estabelecer acordos interinstitucionais (entre instituições) e interfederativos (entre os entes da federação - União, Estados, Municípios e Distrito Federal) para regulação conjunta, quando for o caso. Instituir como serviço público independente a gestão do subsolo, do solo, do mobiliário urbano e do espaço aéreo, com vistas à sua ocupação compartilhada pelas empresas e órgãos responsáveis pelos serviços públicos e privados que demandam sua utilização."
+    },
+    {
+      "recomendacao_id": "2.7",
+      "objetivo": 2,
+      "pagina_inicio": 55,
+      "pagina_fim": 55,
+      "publicos": [
+        "GM",
+        "CIV",
+        "CIH",
+        "ET",
+        "SP",
+        "IFF"
+      ],
+      "texto": "Projetos de expansão, estruturação e requalificação urbana: prever e implementar infraestrutura para inclusão digital nos projetos específicos de expansão urbana (Estatuto da Cidade, Art. 42-A) e em projetos de requalificação urbana. Coordenar processos de expansão, estruturação e requalificação urbana com ações de implantação de infraestrutura de telecomunicações das operadoras de serviços móveis celulares e de banda larga fixa. Estreitar o relacionamento dos municípios com as empresas de telecomunicações. O objetivo é garantir o acesso à infraestrutura digital para todas as pessoas."
+    },
+    {
+      "recomendacao_id": "2.8",
+      "objetivo": 2,
+      "pagina_inicio": 55,
+      "pagina_fim": 55,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "EC",
+        "SP"
+      ],
+      "texto": "Projetos de iluminação pública: Promover a equidade de acesso ao serviço de iluminação pública nas cidades. Nos projetos de expansão e modernização das redes de iluminação pública, priorizar as seguintes áreas: (1) espaços públicos de utilização intensiva; (2) áreas urbanas desservidas; e (3) áreas urbanas inseguras, com índices de violência urbana acima da média da cidade. Essa priorização e as características de cada área devem ser observadas para a definição de padrões luminotécnicos adequados. Implantar projetos de iluminação pública adequados à diversidade dos municípios brasileiros."
+    },
+    {
+      "recomendacao_id": "2.8.1",
+      "objetivo": 2,
+      "pagina_inicio": 56,
+      "pagina_fim": 56,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "AR",
+        "EC",
+        "SP"
+      ],
+      "texto": "Sustentabilidade em iluminação pública: Elevar os padrões de eficiência energética em projetos de modernização e expansão da rede de iluminação pública. Nesses projetos, buscar a redução da poluição luminosa (poluição gerada pelo excesso de luz artificial). Promover a gestão eficiente do serviço por meio da adoção de soluções digitais integradas à rede. O objetivo é minimizar impactos da prestação do serviço de iluminação pública no meio ambiente e na saúde humana, assim como melhorar a qualidade de vida das pessoas nas cidades."
+    },
+    {
+      "recomendacao_id": "2.8.2",
+      "objetivo": 2,
+      "pagina_inicio": 56,
+      "pagina_fim": 56,
+      "publicos": [
+        "GF",
+        "GM",
+        "AR",
+        "EC",
+        "ET"
+      ],
+      "texto": "Aproveitamento da infraestrutura: Considerar a utilização potencial da rede de iluminação pública como infraestrutura de suporte para a oferta de serviços digitais. Buscar esse aproveitamento especialmente nos projetos de modernização e de expansão da rede de iluminação pública. Garantir o compartilhamento em condições justas, razoáveis e não discriminatórias de acesso aos postes de distribuição de energia elétrica. [Ver recomendação 2.6]."
+    },
+    {
+      "recomendacao_id": "2.9",
+      "objetivo": 2,
+      "pagina_inicio": 56,
+      "pagina_fim": 57,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "AR",
+        "SP",
+        "IFF"
+      ],
+      "texto": "Projetos de Internet das Coisas (IoT): Garantir padrões de segurança cibernética e de proteção de dados pessoais em todos os componentes de projetos de Internet das Coisas em áreas urbanas. Garantir o controle de procedência e qualidade dos dispositivos conectados à rede por meio de procedimentos oficiais de certificação. Enfatizar a garantia de transparência, controle e alternativa em processos de automação. Enfatizar também a garantia do direito à privacidade por meio da anonimização (sem elementos que identifiquem as pessoas) de dados e de outros procedimentos, principalmente quando houver atividades de videomonitoramento. Seguir o disposto no Plano Nacional de Internet das Coisas. (Decreto 9.854/2019)."
+    },
+    {
+      "recomendacao_id": "2.10",
+      "objetivo": 2,
+      "pagina_inicio": 57,
+      "pagina_fim": 58,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "ET",
+        "IFF",
+        "AR",
+        "EC",
+        "SP",
+        "IEP",
+        "OSC"
+      ],
+      "texto": "Apoio técnico e financeiro para a conectividade: Oferecer soluções para implantar e manter infraestrutura para inclusão digital. Isso deve ser feito por meio de apoio técnico e financeiro ou outros mecanismos de prestação de serviços públicos essenciais. Considerar as capacidades governativas dos municípios brasileiros. Considerar também as condições socioeconômicas e a localização da moradia da população beneficiária. Fomentar e facilitar a articulação dos municípios e de entidades supramunicipais (entidades que atuam sobre um agrupamento de municípios) com operadoras de serviços de telecomunicações. Estabelecer sistemas de governança de dados e de tecnologias, com transparência, segurança e privacidade"
+    },
+    {
+      "recomendacao_id": "3.1",
+      "objetivo": 3,
+      "pagina_inicio": 58,
+      "pagina_fim": 58,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "AR",
+        "EC",
+        "ET",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Segurança cibernética: Garantir a segurança cibernética em infraestrutura, dispositivos, sistemas, dados e informações digitais. Estabelecer diretrizes, normas e procedimentos que avaliem, melhorem e validem a confiabilidade de hardwares, sistemas operacionais, dispositivos de acesso pessoal e ferramentas individuais (aplicativos)."
+    },
+    {
+      "recomendacao_id": "3.2",
+      "objetivo": 3,
+      "pagina_inicio": 58,
+      "pagina_fim": 59,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "AR",
+        "EC",
+        "ET",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Proteção geral de dados pessoais: Garantir a proteção de dados pessoais, aderindo completamente à Lei Geral de Proteção de Dados Pessoais (LGPD). Respeitar a titularidade da pessoa natural sobre os seus próprios dados pessoais, garantindo, ao mesmo tempo, os direitos fundamentais de liberdade, intimidade e privacidade. Assegurar que o compartilhamento de dados pessoais obedeça aos princípios de finalidade e transparência. Para possibilitar essas ações, estabelecer normas e procedimentos que viabilizem o desenvolvimento seguro e ético de negócios inovadores baseados em dados. Seguir definições estabelecidas pela Agência Nacional de Proteção de Dados (ANPD)."
+    },
+    {
+      "recomendacao_id": "3.2.1",
+      "objetivo": 3,
+      "pagina_inicio": 59,
+      "pagina_fim": 59,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "AR"
+      ],
+      "texto": "Normas locais de proteção de dados pessoais: Apoiar os municípios para que adéquem normas e procedimentos à Lei Geral de Proteção de Dados Pessoais (LGPD). Nessa ação, regular de forma prioritária:(1) a regulação do tratamento de dados em serviços públicos essenciais; e (2) os cadastros em serviços digitais. Articular ações junto à Autoridade Nacional de Proteção de Dados (ANPD). O objetivo é garantir a coesão entre as políticas de compartilhamento de dados com aplicação geral e as propostas de cidades inteligentes."
+    },
+    {
+      "recomendacao_id": "3.3",
+      "objetivo": 3,
+      "pagina_inicio": 59,
+      "pagina_fim": 59,
+      "publicos": [
+        "GF",
+        "CIV",
+        "CIH",
+        "SP",
+        "OSC"
+      ],
+      "texto": "Transparência nos algoritmos de empresas de TICs: Incentivar que empresas de tecnologia de informação e comunicação digital tenham padrões elevados de transparência sobre os critérios e pressupostos que usam nos seus algoritmos. Possibilitar e fortalecer processos de auditoria algorítmica e fomentar o uso de softwares de código fonte aberto ou livres. Essas ações contribuem e devem estar alinhadas com o Sistema Nacional para a Transformação Digital."
+    },
+    {
+      "recomendacao_id": "3.4",
+      "objetivo": 3,
+      "pagina_inicio": 59,
+      "pagina_fim": 60,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "AR",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Interoperabilidade: Garantir a interoperabilidade (capacidade de sistemas trabalharem em conjunto para a troca eficaz de informações) ao implementar soluções de TICs (Tecnologias de Informação e Comunicação) em governos. Garantir a interoperabilidade também em iniciativas interinstitucionais, inclusive público-privadas. Em todos os casos, respeitar e usar normas, padrões e protocolos públicos oficiais (Programa de Interoperabilidade do Governo Eletrônico - e-PING)."
+    },
+    {
+      "recomendacao_id": "3.5",
+      "objetivo": 3,
+      "pagina_inicio": 60,
+      "pagina_fim": 60,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH"
+      ],
+      "texto": "Políticas de dados abertos: Implementar políticas de dados abertos em todos os níveis de governo. Usar experiências e recursos já disponíveis e em operação, tais como: Portal Brasileiro de Dados Abertos, Infraestrutura Nacional de Dados Abertos (INDA) e Infraestrutura Nacional de Dados Espaciais (INDE). Usar as políticas de dados abertos para cumprir o princípio da transparência na administração pública e a Lei de Acesso à Informação (LAI). Usar os modelos e recomendações produzidos pela Parceria para Governo Aberto (OGP - Open Government Partnership)."
+    },
+    {
+      "recomendacao_id": "3.5.1",
+      "objetivo": 3,
+      "pagina_inicio": 60,
+      "pagina_fim": 60,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH"
+      ],
+      "texto": "Registros administrativos: Coletar, sistematizar, digitalizar, georreferenciar (inserir localização geográfica) e disponibilizar dados e informações gerados ao executar políticas públicas e ao prestar serviços públicos, em todos os níveis de governo. Tratar e anonimizar dados sensíveis para possibilitar sua abertura. Todas as etapas devem cumprir as políticas de dados abertos e os padrões de interoperabilidade (capacidade de sistemas trabalharem em conjunto para a troca eficaz de informações) existentes para o nível de governo que executa as ações. Também devem respeitar a Lei Geral de Proteção de Dados Pessoais (LGPD) e a Lei de Acesso à Informação (LAI). Os dados e informações devem ser disponibilizados em linguagem inclusiva."
+    },
+    {
+      "recomendacao_id": "3.5.2",
+      "objetivo": 3,
+      "pagina_inicio": 61,
+      "pagina_fim": 61,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "IEP"
+      ],
+      "texto": "Dados geoespaciais: Fortalecer a Infraestrutura Nacional de Dados Espaciais (INDE) como plataforma que facilita o intercâmbio de dados geoespaciais (dados espaciais com localização geográfica). Estabelecer a Política Nacional de Geoinformação (PNGeo) e consolidar um vocabulário uniforme e específico em sistemas de informação geográfica urbana."
+    },
+    {
+      "recomendacao_id": "3.5.3",
+      "objetivo": 3,
+      "pagina_inicio": 61,
+      "pagina_fim": 61,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "AR",
+        "EC",
+        "ET",
+        "IEP",
+        "IFF"
+      ],
+      "texto": "Padronização para elaboração de cadastros territoriais: Articular iniciativas governamentais que elaboram, ou contribuem para elaborar, cadastros imobiliários. Essa articulação deve ter como foco uniformizar conceitos, nomenclaturas, métodos e meios de implementação. Isso irá otimizar esforços e garantir a interoperabilidade (capacidade de sistemas trabalharem em conjunto para a troca eficaz de informações) de dados."
+    },
+    {
+      "recomendacao_id": "3.6",
+      "objetivo": 3,
+      "pagina_inicio": 61,
+      "pagina_fim": 61,
+      "publicos": [
+        "GE",
+        "GM",
+        "CIH",
+        "IEP"
+      ],
+      "texto": "Governo Digital: Formular e implementar estratégias estaduais e municipais de governo digital que sejam adequadas a cada realidade. O objetivo é tornar a Administração Pública mais acessível e mais eficiente ao prover serviços, como indica a Estratégia de Governo Digital e a Estratégia Brasileira para a Transformação Digital."
+    },
+    {
+      "recomendacao_id": "3.6.1",
+      "objetivo": 3,
+      "pagina_inicio": 61,
+      "pagina_fim": 62,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "SP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Ampliar o acesso a serviços públicos e direitos sociais por meio de TICs: Usar tecnologias de informação e comunicação (TICs) para promover o direito à cidade e para ampliar os direitos sociais. Focar em áreas urbanas com carências de serviços públicos e em pessoas e grupos sociais vulneráveis. Para realizar esses direitos, as TICs devem ajudar a simplificar o acesso a serviços de saúde, educação, moradia, transporte, saneamento básico (abastecimento de água potável, esgotamento sanitário, limpeza urbana e manejo de resíduos sólidos, drenagem e manejo das águas pluviais urbanas), telecomunicações (inclusive serviços de internet), lazer e cultura."
+    },
+    {
+      "recomendacao_id": "3.6.2",
+      "objetivo": 3,
+      "pagina_inicio": 62,
+      "pagina_fim": 62,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH"
+      ],
+      "texto": "Otimização e melhoria de processos administrativos: Estabelecer sistema de processo administrativo eletrônico. Aderir preferencialmente à infraestrutura pública colaborativa do Processo Eletrônico Nacional (PEN) e suas ações, como o Sistema Eletrônico de Informações – SEI. O objetivo é diminuir custos e tornar a tramitação (o andamento) de documentos públicos mais rápida, transparente e acessível."
+    },
+    {
+      "recomendacao_id": "3.6.3",
+      "objetivo": 3,
+      "pagina_inicio": 62,
+      "pagina_fim": 62,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "EC",
+        "IFF"
+      ],
+      "texto": "Serviços analógicos e medidas de transição para o digital: Manter e melhorar procedimentos analógicos e presenciais quando ofertar serviços públicos digitais. Essas ações também devem ser feitas ao implementar medidas de transição, especialmente quando for um serviço essencial. Considerar a grande quantidade de fatores de exclusão digital."
+    },
+    {
+      "recomendacao_id": "3.6.4",
+      "objetivo": 3,
+      "pagina_inicio": 62,
+      "pagina_fim": 62,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM"
+      ],
+      "texto": "Identidade digital: Adotar e apoiar a implementação da “identidade digital ao cidadão”, conforme consta da Estratégia de Governo Digital."
+    },
+    {
+      "recomendacao_id": "3.7",
+      "objetivo": 3,
+      "pagina_inicio": 63,
+      "pagina_fim": 63,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "AR",
+        "SP",
+        "IEP"
+      ],
+      "texto": "Compras públicas: Promover parcerias entre os setores público e privado para revisar e adequar os processos de compras públicas, inclusive as compras que envolvam soluções inovadoras. Para isso, buscar o apoio do Ministério Público e dos Tribunais de Contas, atualizar a legislação e adaptar procedimentos administrativos."
+    },
+    {
+      "recomendacao_id": "3.7.1",
+      "objetivo": 3,
+      "pagina_inicio": 63,
+      "pagina_fim": 63,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "SP"
+      ],
+      "texto": "Contratações governamentais de TICs: Instituir, testar e normatizar novos modelos de governos contratarem Tecnologias de Informação e Comunicação (TICs). Essas ações devem ser feitas de forma conjunta, em cooperação intergovernamental (entre governos). Os novos modelos de contratação devem ter como base o uso de softwares livres e códigos abertos. Assegurar a contratação de instituições, entidades e empresas que tenham: (1) compromisso com os direitos humanos; (2) compromisso com a liberdade de expressão; (3) reputação ilibada; (4) comprovada experiência na área; e (5) responsabilidade e compromisso com a coisa pública. Priorizar a contratação de instituições, entidades e empresas locais. Usar mecanismos de colaboração para compartilhar experiências e boas práticas, tal como acontece na Comunidade de TICs da Plataforma GestGov."
+    },
+    {
+      "recomendacao_id": "3.7.2",
+      "objetivo": 3,
+      "pagina_inicio": 63,
+      "pagina_fim": 63,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "SP",
+        "OSC"
+      ],
+      "texto": "Regulação da propriedade de dados: Definir com precisão os direitos sobre a propriedade e as condições para usar dados em contratos públicos e na atuação pública de caráter regulatório. O mesmo deve ocorrer em iniciativas interinstitucionais que impliquem na geração e no compartilhamento de dados, incluindo as iniciativas público-privadas. Priorizar a abertura e uso dos dados em políticas públicas. Em todos os casos mencionados, respeitar o princípio da função social da propriedade, conforme consta do artigo constitucional sobre ordem econômica. (Art. 170 da Constituição Federal)."
+    },
+    {
+      "recomendacao_id": "3.8",
+      "objetivo": 3,
+      "pagina_inicio": 64,
+      "pagina_fim": 64,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH"
+      ],
+      "texto": "Gestão territorial integrada: Usar sistemas de planejamento integrado e de gestão territorial integrada, com base em plataformas interoperáveis (que trabalham em conjunto para a troca eficaz de informações) de dados georreferenciados (plataformas que possibilitem a troca eficaz de dados com localização geográfica), em todos os níveis de governo. Os sistemas devem ser adequados às diferentes escalas das políticas públicas e respeitar a proteção de dados pessoais. Também devem atender às especificidades, demandas e capacidades locais, nos casos de sistemas municipais."
+    },
+    {
+      "recomendacao_id": "3.8.1",
+      "objetivo": 3,
+      "pagina_inicio": 64,
+      "pagina_fim": 64,
+      "publicos": [
+        "GE",
+        "GM",
+        "CIV",
+        "CIH"
+      ],
+      "texto": "Governança intermunicipal de dados: Estabelecer instituições de cooperação intermunicipal (entre municípios) para implantar, gerir e operar bases de dados, sistemas digitais e soluções compartilhadas de tecnologia de informação e comunicação. O objetivo deve ser otimizar recursos e ampliar a sustentabilidade dessas ações. Exemplos de instituições de cooperação intermunicipal (entre municípios): consórcios públicos, instâncias de governança metropolitana e associações de municípios."
+    },
+    {
+      "recomendacao_id": "3.8.2",
+      "objetivo": 3,
+      "pagina_inicio": 64,
+      "pagina_fim": 64,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "EC",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Centros de gestão integrada: Implantar centros de informações integradas e protocolos públicos para apoiar a tomada de decisões em tempo real. Priorizar a gestão de emergências e a resposta a desastres. Centros articulados com instituições de Ensino e Pesquisa e com o ecossistema de inovação local. O objetivo dessa articulação é produzir conhecimento e construir respostas para problemas públicos. Para essa finalidade, disponibilizar dados coletados pela infraestrutura digital urbana e de registros administrativos anonimizados. Articular os recursos e meios dos Centros de gestão integrada com os dos laboratórios de experimentação urbana."
+    },
+    {
+      "recomendacao_id": "3.9",
+      "objetivo": 3,
+      "pagina_inicio": 65,
+      "pagina_fim": 65,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Plataformas públicas de compartilhamento de dados: Disponibilizar dados abertos e informações públicas em linguagem inclusiva, de forma organizada, compreensível e, sempre que possível, georreferenciados (com localização geográfica). As plataformas de visualização de dados e informações devem ser fáceis de usar por pessoas não-especialistas. Deste modo, as plataformas devem ser programadas em código aberto e com base em softwares livres. Os objetivos são: (1) possibilitar o uso dos dados e das informações pelo ecossistema de inovação local; (2) produzir conhecimento e soluções de interesse público; (3) promover a colaboração para aprimorar dados e análises geradas; e (4) reduzir a dependência de recursos para contratação e manutenção de licenças de softwares."
+    },
+    {
+      "recomendacao_id": "3.10",
+      "objetivo": 3,
+      "pagina_inicio": 65,
+      "pagina_fim": 66,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "AR",
+        "EC",
+        "ET",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Transparência orçamentária na Administração Pública: Padronizar dados e informações relativos a contas públicas de todos os poderes e níveis de governo. Garantir a qualidade e a interoperabilidade (capacidade de sistemas trabalharem em conjunto para a troca eficaz de informações) desses dados e informações. Incluir mecanismos que permitam a geolocalização de investimentos públicos. Implementar a transparência ativa, adotando portais públicos organizados que facilitem a compreensão e o manuseio dos dados e informações por pessoas não especializadas. Os objetivos são: (1) facilitar o planejamento e a gestão orçamentária, financeira e patrimonial na Administração Pública; (2) permitir a integração de dados e informações; (3) facilitar o controle interno e externo, bem como o controle social das contas públicas. Adotar modelos inovadores e inclusivos de governança urbana e fortalecer o papel do poder público como gestor de impactos da transformação digital nas cidades"
+    },
+    {
+      "recomendacao_id": "4.1",
+      "objetivo": 4,
+      "pagina_inicio": 66,
+      "pagina_fim": 66,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH"
+      ],
+      "texto": "Articulação intergovernamental: Fortalecer a articulação entre governos para consolidar a governança urbana multinível (que atua em vários níveis - nacional, regional, estadual e local), interfederativa (com cooperação entre diferentes entes da federação - União, Estados, Municípios e Distrito Federal) e intersetorial (com cooperação entre as diferentes áreas de política pública). Firmar o papel dos governos estaduais e federal no apoio à adaptação de recomendações e políticas para os contextos locais em conjunto com os municípios."
+    },
+    {
+      "recomendacao_id": "4.1.1",
+      "objetivo": 4,
+      "pagina_inicio": 66,
+      "pagina_fim": 67,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "SP",
+        "IEP",
+        "OSC"
+      ],
+      "texto": "Câmara interministerial: Fortalecer espaço de governança institucional de âmbito federal para cidades inteligentes, com participação aberta aos setores interessados. Os objetivos são: (1) construir condições para implementar esta Agenda compartilhada para cidades inteligentes; e (2) criar condições para a continuidade da plataforma colaborativa da Carta Brasileira para Cidades Inteligentes."
+    },
+    {
+      "recomendacao_id": "4.1.2",
+      "objetivo": 4,
+      "pagina_inicio": 67,
+      "pagina_fim": 67,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH"
+      ],
+      "texto": "Cooperação interfederativa em governo digital: Promover o intercâmbio de informações em governo digital. Implementar medidas conjuntas de natureza colaborativa por arranjos de cooperação entre governos. Exemplo: adesão voluntária à Rede Nacional de Governo Digital – Rede Gov.br (Decreto 10.332/20, Art. 7o). O objetivo é otimizar recursos e tempo."
+    },
+    {
+      "recomendacao_id": "4.2",
+      "objetivo": 4,
+      "pagina_inicio": 67,
+      "pagina_fim": 67,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "AR",
+        "EC",
+        "ET",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Atuação em rede e plataformas colaborativas Estado-Sociedade: Mobilizar saberes de diferentes segmentos da sociedade, pessoas e instituições, para construir soluções criativas para problemas urbanos contemporâneos com mais agilidade."
+    },
+    {
+      "recomendacao_id": "4.2.1",
+      "objetivo": 4,
+      "pagina_inicio": 67,
+      "pagina_fim": 67,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "EC",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Rede digital para colaboração urbana: Estimular a formação de uma rede para o desenvolvimento urbano sustentável. A rede deve ser multinível (atuar nos níveis nacionais, regionais, estaduais e locais), interinstitucional (cooperação entre diferentes instituições) e intersetorial (com cooperação entre as diferentes áreas de política pública). A rede deve oferecer recursos digitais e inclusivos para realizar trabalhos colaborativos, incluindo a implementação e a retroalimentação desta Carta Brasileira para Cidades Inteligentes."
+    },
+    {
+      "recomendacao_id": "4.2.2",
+      "objetivo": 4,
+      "pagina_inicio": 67,
+      "pagina_fim": 68,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Rede de assistência técnica remota para ações no território: Expandir e adaptar o modelo da assistência técnica remota baseada em recursos digitais que foi implementado de forma pioneira pela Rede Universitária de Telemedicina. Essa rede de assistência técnica remota deve apoiar órgãos oficiais interfederativos (que agrupam diferentes entes da federação com interesse compartilhado - União, Estados, Municípios e Distrito Federal) e municípios para implementar políticas, projetos e ações de desenvolvimento urbano sustentável, incluindo iniciativas de cidades inteligentes. Apoiar principalmente os municípios de menor capacidade institucional."
+    },
+    {
+      "recomendacao_id": "4.3",
+      "objetivo": 4,
+      "pagina_inicio": 68,
+      "pagina_fim": 68,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "SP",
+        "OSC"
+      ],
+      "texto": "Construção de ambientes para inovação: Promover processos de governança e gestão urbana que sejam interinstitucionais (com cooperação entre diferentes instituições) e colaborativos. O objetivo é construir ambientes político-jurídico-institucionais que sejam: (1) favoráveis à inovação; e (2) adaptados ao contexto territorial e ao nível de atuação das instituições."
+    },
+    {
+      "recomendacao_id": "4.3.1",
+      "objetivo": 4,
+      "pagina_inicio": 68,
+      "pagina_fim": 68,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Políticas de inovação: Estimular e integrar fóruns de inovação no setor público que sejam interfederativos (agrupando diferentes entes da federação com interesse compartilhado - União, Estados, Municípios e Distrito Federal) e abertos à participação ampla de pessoas, instituições e setores interessados. O objetivo é trocar experiências, construir estratégias, políticas e programas, e formular propostas de aperfeiçoamento legislativo e de mecanismos jurídicos. Essas propostas devem reduzir os obstáculos burocráticos à inovação no setor público, incluindo as relações dos governos com a sociedade e a realização de negócios e contratos com empresas de inovação."
+    },
+    {
+      "recomendacao_id": "4.3.2",
+      "objetivo": 4,
+      "pagina_inicio": 69,
+      "pagina_fim": 69,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "AR",
+        "EC",
+        "ET",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Colaboração em processos legislativos: Estimular o uso de processos participativos para elaborar leis e normas infralegais (de nível regulamentar, subordinadas às leis - decretos, portarias, resoluções, instruções normativas etc.), diretrizes, parâmetros e formas de atuação pública. Estimular especialmente nos casos de tecnologias disruptivas (que causam ruptura com padrões e modelos existentes) e temas inovadores ainda não regulados. Usar ferramentas de TICs (tecnologias de informação e comunicação) e tecnologias assistivas (com funcionalidade para garantir autonomia, independência, qualidade de vida e inclusão social da pessoa com deficiência ou com mobilidade reduzida). O uso dessas tecnologias deve ampliar o engajamento de pessoas e instituições interessadas."
+    },
+    {
+      "recomendacao_id": "4.3.3",
+      "objetivo": 4,
+      "pagina_inicio": 69,
+      "pagina_fim": 69,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "AR",
+        "EC",
+        "SP",
+        "IEP",
+        "OSC"
+      ],
+      "texto": "Diálogo com órgãos de controle: Estabelecer fóruns regulares de diálogo entre: (1) instituições públicas que formulam e implementam políticas públicas; (2) órgãos de controle dos poderes executivo, legislativo e judiciário; (3) Ministério Público; (4) setores envolvidos; (5) organizações da sociedade civil. Esses fóruns devem ter caráter estratégico na tarefa de construir conjuntamente caminhos e suporte à tomada de decisões sobre a transformação digital nas cidades. O objetivo é assegurar a boa condução das políticas sobre o tema da transformação digital nas cidades, em todos os níveis de governo."
+    },
+    {
+      "recomendacao_id": "4.3.4",
+      "objetivo": 4,
+      "pagina_inicio": 69,
+      "pagina_fim": 70,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "AR",
+        "EC",
+        "ET",
+        "IEP"
+      ],
+      "texto": "Agências reguladoras: Alinhar normas, técnicas e operações relativas a serviços públicos que requeiram a instalação de infraestruturas no espaço urbano. Para isso, estabelecer espaço de governança permanente entre agências reguladoras desses serviços públicos. Os objetivos são: (1) racionalizar a instalação e a manutenção de infraestruturas no espaço urbano, otimizando sua utilização; (2) assegurar a observância das normas urbanísticas locais pelas concessionárias dos serviços regulados."
+    },
+    {
+      "recomendacao_id": "4.3.5",
+      "objetivo": 4,
+      "pagina_inicio": 70,
+      "pagina_fim": 70,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "SP",
+        "IEP",
+        "IFF"
+      ],
+      "texto": "Programas de fomento à inovação: Promover processos de formação e programas de fomento à inovação e ao desenvolvimento tecnológico. Os objetivos são: (1) orientar ações nos setores público e privado; e (2) apoiar o desenvolvimento urbano e a transformação digital sustentáveis, conforme as necessidades e prioridades locais e regionais."
+    },
+    {
+      "recomendacao_id": "4.4",
+      "objetivo": 4,
+      "pagina_inicio": 70,
+      "pagina_fim": 70,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Capacidades na administração pública para a transformação digital: Desenvolver capacidades e competências na Administração Pública que sejam voltadas à atuação no contexto da transformação digital e seus desdobramentos territoriais. Implementar e fortalecer programas de desenvolvimento institucional em todos os níveis de governo."
+    },
+    {
+      "recomendacao_id": "4.4.1",
+      "objetivo": 4,
+      "pagina_inicio": 70,
+      "pagina_fim": 70,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Apoio técnico para municípios: Desenvolver e implementar ações de capacitação e assistência técnica federais e estaduais para municípios. Essas ações devem ser acessíveis a todas as pessoas interessadas no território nacional, de preferência por meio de plataforma única que integre diferentes recursos e iniciativas [ver recomendação 4.2.1]. Devem estar de acordo com as respectivas capacidades governativas (capacidades de gestão e de sustentabilidade institucional) locais. Também devem estar de acordo com as tipologias (categorias de território) definidas na Política Nacional de Desenvolvimento Urbano (PNDU). O objetivo é apoiar a administração municipal na direção da transformação digital e do desenvolvimento urbano sustentáveis."
+    },
+    {
+      "recomendacao_id": "4.4.2",
+      "objetivo": 4,
+      "pagina_inicio": 71,
+      "pagina_fim": 71,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "SP",
+        "IEP"
+      ],
+      "texto": "Competências governamentais em TICs (tecnologias da informação e comunicação): Fortalecer órgãos locais de processamentos de dados. Desenvolver habilidades governamentais em tecnologias de informação e comunicação para servidoras e servidores públicos de diversas áreas do conhecimento. Isso deve ser feito em todos os níveis de governo e por meio de cooperações interfederativas (entre União, Estados, Municípios e Distrito Federal). Os objetivos são: (1) possibilitar o diálogo e o trabalho conjunto entre áreas meio e fim; e (2) estimular a plena capacidade de usar conhecimentos avançados de tecnologias disruptivas (que causam ruptura com padrões e modelos existentes) e ciência de dados, para gerir grandes volumes de dados (Big Data)."
+    },
+    {
+      "recomendacao_id": "4.4.3",
+      "objetivo": 4,
+      "pagina_inicio": 71,
+      "pagina_fim": 71,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "EC",
+        "SP",
+        "IEP",
+        "OSC"
+      ],
+      "texto": "Metodologias inovadoras para desenho de soluções: Usar metodologias e mecanismos inovadores para elaborar e implementar políticas de desenvolvimento urbano sustentável e soluções para problemas urbanos. Exemplos de mecanismos inovadores: jogos (“gamificação”) e maratonas de programação (hackathons)."
+    },
+    {
+      "recomendacao_id": "4.4.4",
+      "objetivo": 4,
+      "pagina_inicio": 71,
+      "pagina_fim": 71,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "IEP"
+      ],
+      "texto": "Valorização de servidores públicos inovadores: Estabelecer mecanismos para identificar servidores públicos inovadores em todos os níveis de governo. Oferecer incentivos e oportunidades para o desenvolvimento e uso das potencialidades dos servidores em trabalhos institucionais e no aprimoramento de políticas públicas."
+    },
+    {
+      "recomendacao_id": "4.5",
+      "objetivo": 4,
+      "pagina_inicio": 71,
+      "pagina_fim": 71,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "EC",
+        "ET",
+        "SP",
+        "IEP",
+        "OSC"
+      ],
+      "texto": "Adoção de processos inovadores de gestão e governança no nível local:"
+    },
+    {
+      "recomendacao_id": "4.5.1",
+      "objetivo": 4,
+      "pagina_inicio": 72,
+      "pagina_fim": 72,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "SP",
+        "OSC"
+      ],
+      "texto": "Gestão democrática das cidades: Estimular o engajamento e a participação pública inclusiva: na elaboração e na revisão do Plano Diretor e de outros instrumentos de planejamento municipal; (1) em aspectos cotidianos de zeladoria e gestão urbana; e (2) na interação governo-pessoas. Esse estímulo deve se dar por meio de mecanismos inovadores e soluções digitais, e com o uso de tecnologias assistivas (com funcionalidade para garantir autonomia, independência, qualidade de vida e inclusão social da pessoa com deficiência ou com mobilidade reduzida). As ações devem estar de acordo com as demandas e necessidades locais e devem ser adequadas às características organizacionais e institucionais do município. Buscar alinhamento com a Estratégia de Governo Digital (Decreto 10.332/2020, objetivo 14.2) e executar a gestão democrática da cidade (Estatuto da Cidade, Capítulo IV)."
+    },
+    {
+      "recomendacao_id": "4.5.2",
+      "objetivo": 4,
+      "pagina_inicio": 72,
+      "pagina_fim": 72,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "IEP"
+      ],
+      "texto": "Intersetorialidade no nível local: Estabelecer espaços institucionais para cooperação e atuação intersetorial (cooperação entre as diferentes áreas de política pública), inclusive entre órgãos de municípios diferentes (escala supramunicipal). O objetivo é facilitar que as políticas, planos e programas de desenvolvimento urbano e de setores relacionados sejam implementados de forma integrada no território. Incluir ações de diferentes setores: por exemplo, habitação, saneamento básico (abastecimento de água potável, esgotamento sanitário, limpeza urbana e manejo de resíduos sólidos, drenagem e manejo das águas pluviais urbanas), mobilidade urbana, segurança hídrica, redução de desastres, meio ambiente, saúde, educação e segurança urbana. Adotar abordagem contínua e incremental (que aumenta e melhora algo que já existe) para alcançar a integração."
+    },
+    {
+      "recomendacao_id": "4.5.3",
+      "objetivo": 4,
+      "pagina_inicio": 73,
+      "pagina_fim": 73,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "EC",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Soluções inovadoras para problemas locais: Mapear demandas locais concretas e a oferta de soluções inovadoras para problemas levantados. Para esse mapeamento, mobilizar o ecossistema (conjunto e relações de pessoas e instituições que desenvolvem tecnologia e inovam) e estabelecer cooperação local. Essas atividades devem buscar coordenar, entre os setores interessados, ações voltadas ao desenvolvimento urbano e à transformação digital sustentáveis."
+    },
+    {
+      "recomendacao_id": "4.5.4",
+      "objetivo": 4,
+      "pagina_inicio": 73,
+      "pagina_fim": 73,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "EC",
+        "ET",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Laboratórios de experimentação urbana: Incentivar o surgimento de soluções urbanas inovadoras, criando espaços colaborativos transdisciplinares (que possibilitam a cooperação entre diferentes disciplinas e saberes) para cidades inteligentes. Essas ações devem considerar a visão ampla da transformação digital nas cidades. Para garantir que as soluções sejam realizáveis, deve-se focar em pesquisa e experimentação em ambientes reais. Para isso, articular instituições de ensino e pesquisa e outros setores envolvidos na produção de conhecimento, com apoio institucional e jurídico da Administração Pública Municipal. Integrar esses Laboratórios ao Observatório da Transformação Digital nas cidades e a outros fóruns oficiais relacionados à transformação digital [ver recomendação 8.2]."
+    },
+    {
+      "recomendacao_id": "4.5.5",
+      "objetivo": 4,
+      "pagina_inicio": 73,
+      "pagina_fim": 75,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "EC",
+        "SP",
+        "IEP",
+        "OSC",
+        "AR",
+        "ET",
+        "IFF"
+      ],
+      "texto": "Serviços urbanos disruptivos: Estruturar espaços de gestão e governança e usar metodologias ágeis para garantir: (1) a tomada de decisão informada por evidências; e (2) a regulação de soluções urbanas em momento adequado. Exemplos de soluções que demandam essas ações: soluções que usam mecanismos ou tecnologias disruptivas (que causam ruptura com padrões e modelos existentes); soluções que geram bases de dados com informações pessoais ou de interesse público; e soluções que usam ou interferem em espaços públicos urbanos (calçadas, praças, sistema viário, soluções de transporte motorizado ou não motorizado, serviços de entrega) etc. Fomentar o desenvolvimento econômico local no contexto da transformação digital"
+    },
+    {
+      "recomendacao_id": "5.1",
+      "objetivo": 5,
+      "pagina_inicio": 75,
+      "pagina_fim": 75,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "AR",
+        "EC",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Economias alternativas e inovadoras para a diversidade: Apoiar o desenvolvimento de modelos econômicos locais verdes, justos e inovadores. Incluir iniciativas de economias solidária, compartilhada, criativa, circular e colaborativa. Usar essas iniciativas para criar soluções de modo a atender as diferentes realidades locais e gerar oportunidades a todas as pessoas, especialmente para incluir pessoas e grupos sociais vulneráveis."
+    },
+    {
+      "recomendacao_id": "5.1.1",
+      "objetivo": 5,
+      "pagina_inicio": 75,
+      "pagina_fim": 76,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "AR",
+        "EC",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Decrescimento e economia zero emissões: Incluir perspectivas de decrescimento, descarbonização e outras variáveis inovadoras de sustentabilidade na exploração de novas alternativas de organização social e econômica. Introzudir a redução de desigualdades socioeconomicas e a distribuição de riquezas na discusssão de modelos econômicos verdes, justos e inovadores. O objetivo é lidar com a escassez de recursos naturais e com a precarização do mundo do trabalho."
+    },
+    {
+      "recomendacao_id": "5.2",
+      "objetivo": 5,
+      "pagina_inicio": 76,
+      "pagina_fim": 76,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "EC",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Economia verde, solidária e sustentável: Promover incentivos econômicos ambientais, tais como modelos de pagamento por serviços ambientais, utilização de títulos verdes, compras públicas sustentáveis e programas de aquisição da produção agrícola sustentável. Também promover esquemas econômicos autogeridos (quando membros têm autonomia para planejar e executar as tarefas), de base comunitária e avaliar a possibilidade do seu escalonamento (produção em grande escala) com base em tecnologias de registro distribuído (sistemas digitais para registrar transações de forma descentralizada, em vários lugares ao mesmo tempo) (Agenda 2030, ODS 12 - Meta 12.7)."
+    },
+    {
+      "recomendacao_id": "5.2.1",
+      "objetivo": 5,
+      "pagina_inicio": 76,
+      "pagina_fim": 76,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "EC",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Padrões sustentáveis de produção e consumo: Utilizar as TICs para estimular padrões responsáveis de produção e consumo e ativação da economia local."
+    },
+    {
+      "recomendacao_id": "5.3",
+      "objetivo": 5,
+      "pagina_inicio": 76,
+      "pagina_fim": 76,
+      "publicos": [
+        "GF",
+        "GM",
+        "CIV",
+        "SP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Economia de plataforma: Usar mecanismos da economia de plataforma (atividade econômica e social facilitada por plataformas) para aproximar produtores e consumidores locais. O objetivo é fortalecer vínculos comunitários e territoriais, tais como relações de vizinhança, relações urbano-rurais e relações com microempreendedores individuais."
+    },
+    {
+      "recomendacao_id": "5.4",
+      "objetivo": 5,
+      "pagina_inicio": 77,
+      "pagina_fim": 77,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "AR",
+        "EC",
+        "ET",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Economia e mercado de dados: Implementar políticas, leis, regulamentos e outros instrumentos para estabelecer um mercado de dados ético e inclusivo. Garantir a proteção de dados pessoais, aderindo completamente à Lei Geral de Proteção de Dados Pessoais (LGPD). Devem ser considerados os efeitos sistêmicos desse mercado, assim como as características e as necessidades específicas de diferentes setores produtivos. O objetivo é aumentar a inovação, a competição, a transparência e a segurança jurídica na economia de dados."
+    },
+    {
+      "recomendacao_id": "5.5",
+      "objetivo": 5,
+      "pagina_inicio": 77,
+      "pagina_fim": 77,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "EC",
+        "IFF"
+      ],
+      "texto": "Pagamentos digitais de serviços públicos: Facilitar o uso de meios de pagamentos digitais para serviços públicos, desenvolvendo e compartilhando ferramentas que estejam alinhadas com a Plataforma de Cidadania Digital. Adotar o PIX (pagamento instantâneo do Banco Central) como forma de pagamento para serviços públicos. As ações devem ocorrer em todos os níveis de governo e em cooperação interfederativa (entre União, Estados, Municípios e Distrito Federal)."
+    },
+    {
+      "recomendacao_id": "5.6",
+      "objetivo": 5,
+      "pagina_inicio": 77,
+      "pagina_fim": 77,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "EC",
+        "SP"
+      ],
+      "texto": "Competitividade em serviços digitais urbanos: Buscar formas de garantir competitividade aos ecossistemas (conjunto e relações de pessoas e instituições que desenvolvem tecnologia e inovam) de serviços digitais urbanos. Para isso, devem-se usar práticas que evitem monopólios e promovam a escolha livre dos usuários. As ações devem estar alinhadas com a Declaração de Direitos de Liberdade Econômica."
+    },
+    {
+      "recomendacao_id": "5.6.1",
+      "objetivo": 5,
+      "pagina_inicio": 77,
+      "pagina_fim": 78,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "SP",
+        "IFF"
+      ],
+      "texto": "Crédito para pequenas empresas de TICs: Facilitar o acesso a condições especiais de crédito por pessoas microempreendedoras individuais e por pequenas empresas de TICs (tecnologias de informação e comunicação). Estabelecer incentivos financeiros e técnicos à operação de pequenos provedores de Internet de forma a garantir a provisão e a sustentabilidade de iniciativas de acesso à internet em parceria com o poder público."
+    },
+    {
+      "recomendacao_id": "5.6.2",
+      "objetivo": 5,
+      "pagina_inicio": 78,
+      "pagina_fim": 78,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Apoio à inclusão produtiva e digital: Criar subsídios e outros mecanismos para a inclusão produtiva e digital de micro e pequenas empresas, pessoas empreendedoras ou pessoas que trabalham informalmente. Esses mecanismos devem viabilizar economicamente o acesso dessas pessoas e empresas: (1) à internet; (2) a dispositivos digitais de qualidade, tais como smartphones, tablets e notebooks; e (3) a plataformas para comércio eletrônico. As ações também devem apoiar a legalização das pessoas que trabalham informalmente."
+    },
+    {
+      "recomendacao_id": "5.7",
+      "objetivo": 5,
+      "pagina_inicio": 78,
+      "pagina_fim": 78,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "AR",
+        "EC",
+        "ET",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "TICs para a redução da pobreza urbana: Usar as tecnologias de informação e comunicação para reduzir a pobreza urbana, contribuindo para a Meta 1.4 do Objetivo de Desenvolvimento Sustentável 1."
+    },
+    {
+      "recomendacao_id": "5.7.1",
+      "objetivo": 5,
+      "pagina_inicio": 78,
+      "pagina_fim": 78,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "SP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Acesso a serviços financeiros e microfinanças: Promover a inclusão financeira de pessoas e grupos sociais vulneráveis. Para isso, deve-se possibilitar o acesso dessas pessoas e grupos a serviços financeiros, microfinanças e outras formas de participação econômica. Essas ações devem ser feitas com o apoio de produtos e serviços digitais. O objetivo deve ser reduzir desigualdades de acesso a recursos econômicos."
+    },
+    {
+      "recomendacao_id": "5.7.2",
+      "objetivo": 5,
+      "pagina_inicio": 79,
+      "pagina_fim": 79,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Acesso à terra urbana regular: Usar tecnologias de informação e comunicação para facilitar a regularização fundiária de núcleos urbanos informais de baixa renda (REURB-S). A regularização fundiária deve acontecer com o apoio de programas de assistência técnica às comunidades. Essas ações têm como objetivo reconhecer direitos sociais e patrimoniais."
+    },
+    {
+      "recomendacao_id": "5.7.3",
+      "objetivo": 5,
+      "pagina_inicio": 79,
+      "pagina_fim": 79,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "SP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Negócios sociais para a ampliação de serviços e direitos: Estimular parcerias e negócios sociais que ampliem o acesso a serviços essenciais e assegurem direitos, inclusive para pessoas motoristas e entregadoras por aplicativos. Estimular também parcerias e negócios que promovam a inclusão social e produtiva de pessoas e grupos sociais vulneráveis, gerando renda e emprego. As ações de inclusão devem ser apoiadas por processos de formação continuada e inclusão digital."
+    },
+    {
+      "recomendacao_id": "5.8",
+      "objetivo": 5,
+      "pagina_inicio": 79,
+      "pagina_fim": 80,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "ET",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Desenvolvimento econômico regional e local: Apoiar cadeias produtivas e ecossistemas de inovação (conjunto e relações de pessoas e instituições que desenvolvem tecnologia e inovam) nos territórios, de modo a reduzir desigualdades socioeconômicas e espaciais. Fortalecer arranjos produtivos locais, ofertar incentivos econômicos e implementar infraestruturas e tecnologias sociais de suporte, tais como parques tecnológicos, laboratórios especializados e incubadoras. Essas ações devem estar alinhadas com a Política Nacional de Desenvolvimento Regional (PNDR) e com a Política Nacional de Desenvolvimento Urbano (PNDU). Também devem estar alinhadas com os planos regionais de desenvolvimento: Plano Regional de Desenvolvimento da Amazônia (PRDA), Plano Regional de Desenvolvimento do Nordeste (PRDNE) e Plano de Desenvolvimento do Centro-Oeste (PRDCO)."
+    },
+    {
+      "recomendacao_id": "5.8.1",
+      "objetivo": 5,
+      "pagina_inicio": 80,
+      "pagina_fim": 80,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Arranjos Produtivos Locais: Desenvolver, usar e compartilhar soluções digitais para identificar e fortalecer Arranjos Produtivos Locais. Disseminar metodologias e ampliar iniciativas de ativação e articulação produtiva no território. Por exemplo, estimular o desenvolvimento de regiões produtoras de alimentos próximas dos centros urbanos. Essas ações devem ser facilitadas pelo uso de recursos e métodos da economia de plataforma (atividades econômicas facilitadas por plataformas digitais). As ações buscam fortalecer e ampliar os elos da cadeia produtiva do país, indo além da base produtiva e agregando segmentos à produção brasileira."
+    },
+    {
+      "recomendacao_id": "5.8.2",
+      "objetivo": 5,
+      "pagina_inicio": 80,
+      "pagina_fim": 80,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "AR",
+        "EC",
+        "ET",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Cadeia produtiva de resíduos eletrônicos: Estimular projetos de Pesquisa & Desenvolvimento (P&D) voltados ao aproveitamento econômico de resíduos eletrônicos. Esses projetos devem estimular que a indústria nacional adote princípios da economia circular. As ações devem contribuir para reduzir os impactos negativos da transformação digital nas cidades (Agenda 2030 ODS 11 - Meta 11.6; ODS 12 - Metas 12.4 e 12.5)."
+    },
+    {
+      "recomendacao_id": "5.8.3",
+      "objetivo": 5,
+      "pagina_inicio": 80,
+      "pagina_fim": 81,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Compatibilizar soluções digitais às demandas urbanas: Fazer seleções e consultas públicas para identificar e sistematizar necessidades dos municípios relacionadas à melhoria das informações, do planejamento, da gestão e da governança urbanas. O objetivo é facilitar o desenvolvimento de soluções digitais pelo setor privado, especialmente por empresas de base tecnológica. Essas soluções digitais devem ser adequadas à diversidade territorial brasileira e estar alinhadas com as tipologias (categorias de território) municipal e supramunicipal (agrupamento de municípios) da Política Nacional de Desenvolvimento Urbano (PNDU)."
+    },
+    {
+      "recomendacao_id": "5.8.4",
+      "objetivo": 5,
+      "pagina_inicio": 81,
+      "pagina_fim": 81,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Startups e transformação digital nas cidades: Aproximar o ecossistema (conjunto e relações de pessoas e instituições que desenvolvem tecnologia e inovam) de startups (Lei das Startups) das necessidades municipais relacionadas a melhorar as informações, o planejamento, a gestão e a governança urbanas. Para esse fim, deve-se divulgar esta Carta e os seus desdobramentos em eventos do setor. Também deve-se articular linhas de financiamento para startups de natureza incremental (aumentam e melhoram gradualmente algo que já existe) ou de natureza disruptiva (rompem com padrões e modelos existentes). Aproveitar o ambiente do Comitê Nacional de Iniciativas de Apoio a Start-ups."
+    },
+    {
+      "recomendacao_id": "5.8.5",
+      "objetivo": 5,
+      "pagina_inicio": 81,
+      "pagina_fim": 81,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "SP",
+        "IEP",
+        "OSC"
+      ],
+      "texto": "Formação e mercado profissional: Estimular a formação profissional na área de TICs (exemplos: programadores, cientistas de dados), por meio de ensino profissionalizante e de nível superior. Fomentar mercado de trabalho para alocação e retenção das pessoas formadas por meio da articulação de estratégias locais que respondam a demandas das cidades, apoiadas pela rede de Institutos Nacionais de Ciência e Tecnologia (INCT)."
+    },
+    {
+      "recomendacao_id": "5.9",
+      "objetivo": 5,
+      "pagina_inicio": 82,
+      "pagina_fim": 82,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "EC"
+      ],
+      "texto": "Ambiente de negócios nas cidades: Aperfeiçoar, compatibilizar e dar ampla publicidade a normas e procedimentos municipais. Padronizar os processos burocráticos, tornando-os mais claros e eficientes. O objetivo é estimular o desenvolvimento econômico local. Os estados e a União devem atuar da mesma forma nos assuntos que forem de sua competência."
+    },
+    {
+      "recomendacao_id": "5.9.1",
+      "objetivo": 5,
+      "pagina_inicio": 82,
+      "pagina_fim": 82,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV"
+      ],
+      "texto": "Classificação das atividades econômicas: Usar os códigos da Classificação Nacional de Atividades Econômicas–Fiscal (CNAE–Fiscal) do Instituto Brasileiro de Geografia e Estatística (IBGE) nos registros administrativos de todos os níveis de governo. Estabelecer fluxos para a criação de novas atividades no CNAE-Fiscal conforme a necessidade (exemplo: serviços que se caraceterizam pelo uso intensivo de tecnologias). O objetivo é criar uma medida unificadora de caráter nacional e mantê-la atualizada com novas atividades econômicas."
+    },
+    {
+      "recomendacao_id": "5.9.2",
+      "objetivo": 5,
+      "pagina_inicio": 82,
+      "pagina_fim": 82,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM"
+      ],
+      "texto": "Liberação da atividade econômica: Facilitar a realização de negócios nas cidades. Para isso, simplificar os processos e atos públicos de liberação da atividade econômica (atos exigidos como condição para exercer uma atividade econômica), conforme os níveis de risco das atividades. Na definição de níveis de risco das atividades econômicas, observar o princípio da razoabilidade e da proporcionalidade, a segurança física e sanitária, e a competência constitucional dos municípios no ordenamento, uso e ocupação do solo."
+    },
+    {
+      "recomendacao_id": "5.9.3",
+      "objetivo": 5,
+      "pagina_inicio": 83,
+      "pagina_fim": 84,
+      "publicos": [
+        "GM",
+        "CIH",
+        "GF",
+        "GE",
+        "CIV",
+        "AR",
+        "EC",
+        "ET",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Normas urbanísticas municipais: Compatibilizar normas urbanísticas municipais, simplificar procedimentos e instituir serviço digital de licenciamento urbanístico e edilício (de edificações). Atender às normas gerais e diretrizes editadas pela União, inclusive relacionadas com os serviços de telecomunicações e sua respectiva infraestrutura de suporte. Estabelecer prazos razoáveis para analisar e emitir os atos públicos necessários. Tornar os regramentos e os processos de licenciamento acessíveis às pessoas, organizar e disponibilizar as informações de forma clara e em linguagem simples e inclusiva. Buscar disponibilizar essas informações em portal público de dados georreferenciados (com localização geográfica) relativos ao ordenamento territorial do município. O portal deve ser fácil de usar pelo público não especializado. Estimular modelos e instrumentos de financiamento do desenvolvimento urbano sustentável no contexto da transformação digital"
+    },
+    {
+      "recomendacao_id": "6.1",
+      "objetivo": 6,
+      "pagina_inicio": 84,
+      "pagina_fim": 84,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM"
+      ],
+      "texto": "TICs no orçamento público: Incluir a transformação digital no orçamento público em todos os níveis de governo. O orçamento deve ser usado para realizar investimentos nas seguintes áreas: (1) modernização tecnológica; (2) digitalização de dados; (3) digitalização de serviços públicos; e (4) infraestrutura para inclusão digital. Os investimentos devem ser viabilizados inclusive com transferências de recursos. As ações do Governos Federal devem se adequar às tipologias (categorias de território) da Política Nacional de Desenvolvimento Urbano (PNDU)."
+    },
+    {
+      "recomendacao_id": "6.2",
+      "objetivo": 6,
+      "pagina_inicio": 84,
+      "pagina_fim": 85,
+      "publicos": [
+        "GF",
+        "CIV",
+        "AR",
+        "ET"
+      ],
+      "texto": "FUST e outros fundos para acesso à internet: Reformular a legislação do Fundo de Universalização das Telecomunicações (FUST) para permitir que seja aplicado em expansão do acesso à internet, por diferentes meios. A reformulação também deve ampliar o uso do FUST em ambientes urbanos e em áreas rurais e remotas. Utilizar fundos setoriais, como o Fundo de Fiscalização das Telecomunicações (Fistel) e o Fundo para o Desenvolvimento Tecnológico das Telecomunicações (Funttel), para massificar o acesso de todas as pessoas à internet. Considerar as ações previstas na Estratégia Brasileira para a Transformação Digital (E-digital)."
+    },
+    {
+      "recomendacao_id": "6.3",
+      "objetivo": 6,
+      "pagina_inicio": 85,
+      "pagina_fim": 85,
+      "publicos": [
+        "GF",
+        "GE",
+        "CIV",
+        "CIH",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Estratégias financeiras e tributárias para ampliação da conectividade digital: Incentivar os governos estaduais a implantarem políticas de redução de carga tributária. O objetivo é interiorizar (levar a cobertura das redes para o interior do país) a cobertura das redes do Serviço Móvel Pessoal (Estratégia Brasileira para a Transformação Digital E-digital) e os serviços de oferta de banda larga. Além disso, incentivar os governos estaduais a disponibilizarem recursos onerosos (com encargos financeiros) e não onerosos (sem encargos financeiros) para fornecer e ampliar a conectividade digital. Esses recursos devem apoiar a elaboração de projetos e a implementação de plataformas digitais."
+    },
+    {
+      "recomendacao_id": "6.4",
+      "objetivo": 6,
+      "pagina_inicio": 85,
+      "pagina_fim": 85,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "ET",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Utilização de TICs para melhorar a arrecadação municipal:"
+    },
+    {
+      "recomendacao_id": "6.4.1",
+      "objetivo": 6,
+      "pagina_inicio": 85,
+      "pagina_fim": 86,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Cadastros municipais: Disponibilizar assistência técnica e recursos financeiros onerosos (com encargos financeiros) ou não onerosos (sem encargos financeiros) aos municípios para elaborar e atualizar cadastros municipais, tais como: (1) bases cartográficas georreferenciadas (com localização geográfica); (2) cadastros territoriais municipais; e (3) plantas genéricas de valores (cadastro do valor do metro quadrado em cada área da cidade; usado como base para o cálculo do IPTU e do ITBI). Os cadastros devem: (1) obedecer a metrologia e padronização estabelecida por órgãos ou entidades competentes; (2) ser adequados aos diferentes tipos de municípios. Os municípios serão classificados em tipos na Política Nacional de Desenvolvimento Urbano (PNDU). Essas ações são estratégicas para aprimorar a gestão urbana e melhorar a arrecadação de tributos municipais. Envolver órgãos de pesquisa, geografia e estatística da União e dos Estados nessas ações, para execução direta ou em apoio aos municípios."
+    },
+    {
+      "recomendacao_id": "6.4.2",
+      "objetivo": 6,
+      "pagina_inicio": 86,
+      "pagina_fim": 86,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIH",
+        "ET"
+      ],
+      "texto": "TICs e mecanismos extrafiscais de arrecadação: Usar tecnologias de informação e comunicação para viabilizar ou melhorar a implementação de instrumentos para capturar e recuperar mais-valias urbanas (valorização do terreno por causa de ações públicas). Alguns desses instrumentos estão previstos no Estatuto da Cidade."
+    },
+    {
+      "recomendacao_id": "6.5",
+      "objetivo": 6,
+      "pagina_inicio": 86,
+      "pagina_fim": 86,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "SP",
+        "IFF"
+      ],
+      "texto": "Parcerias com instituições financeiras e de fomento: Estabelecer parcerias com instituições financeiras e de fomento para desenvolver linhas de financiamento para cidades inteligentes que estejam associadas às recomendações desta Carta. As parcerias devem incluir instituições brasileiras e internacionais. Nas linhas de financiamento, priorizar projetos de abordagem sistêmica (que considera que cada elemento ou ação em uma cidade tem efeitos que se entrelaçam e se afetam entre si, impactando de maneira complexa a vida na cidade) e intersetorial (com cooperação entre as diferentes áreas de política pública). As ações devem se adequar às tipologias (categorias de território) da Política Nacional de Desenvolvimento Urbano (PNDU)."
+    },
+    {
+      "recomendacao_id": "6.6",
+      "objetivo": 6,
+      "pagina_inicio": 86,
+      "pagina_fim": 87,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "SP",
+        "IFF"
+      ],
+      "texto": "Captação de recursos para projetos de cidades inteligentes: Dar apoio técnico para municípios captarem recursos onerosos (com encargos financeiros) e não onerosos (sem encargos financeiros) junto a instituições financeiras e de fomento. Para esse apoio, deve-se: (1) disponibilizar informações sobre linhas de financiamento e repasses de recursos disponíveis; e (2) dar suporte à elaboração de projetos de cidades inteligentes. As ações devem se adequar às tipologias (categorias de território) da Política Nacional de Desenvolvimento Urbano (PNDU)."
+    },
+    {
+      "recomendacao_id": "6.7",
+      "objetivo": 6,
+      "pagina_inicio": 87,
+      "pagina_fim": 87,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "SP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Projetos de Concessão e Parcerias Público-Privadas: Desenvolver estudos de viabilidade para modelagens inovadoras proporcionadas pela transformação digital (integração de serviços públicos, valoração e transação de ativos ligados a economia de dados e à economia verde, por exemplo). Respeitar a Lei Geral de Proteção de Dados Pessoais nesses novos modelos de negócios. Considerar a inclusão de novas linhas para desenvolver modelagens inovadoras no Fundo de Apoio à Estruturação de Concessão e Parcerias Público-Privadas (FEP). [ver recomendações 5.1 a 5.4]"
+    },
+    {
+      "recomendacao_id": "6.8",
+      "objetivo": 6,
+      "pagina_inicio": 87,
+      "pagina_fim": 87,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIH",
+        "AR"
+      ],
+      "texto": "Contrapartidas pelo uso do espaço público: Estimular mecanismos para estabelecer contrapartida e cobrar de empresas de inovação e tecnologias de informação e comunicação (TICs) que usam infraestrutura urbana, espaços públicos e mobiliários urbanos. Esses mecanismos devem financiar o desenvolvimento urbano sustentável."
+    },
+    {
+      "recomendacao_id": "6.9",
+      "objetivo": 6,
+      "pagina_inicio": 87,
+      "pagina_fim": 87,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "SP",
+        "IFF"
+      ],
+      "texto": "Fomento à inovação pelo setor privado: Mapear e reunir a indústria e os setores de tecnologia de informação e comunicação em torno de ações que estimulem a inovação em prol do desenvolvimento urbano sustentável."
+    },
+    {
+      "recomendacao_id": "6.10",
+      "objetivo": 6,
+      "pagina_inicio": 88,
+      "pagina_fim": 89,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "IEP",
+        "IFF",
+        "OSC",
+        "AR",
+        "EC",
+        "ET",
+        "SP"
+      ],
+      "texto": "Estratégias inovadoras de financiamento: Realizar estudos exploratórios para identificar possibilidades de tributar serviços digitais privados. Os estudos também devem identificar as possibilidades de usar tecnologias de registro distribuído (sistemas digitais para registrar transações em vários lugares ao mesmo tempo) para valorar (atribuir valor financeiro) ativos públicos ou comuns. Os ativos a serem valorados devem ter potencial para gerar receitas e devem poder ser usados para compor novos modelos de negócios no contexto do desenvolvimento urbano sustentável. Fomentar um movimento massivo e inovador de educação e comunicação públicas para maior engajamento da sociedade no processo de transformação digital e de desenvolvimento urbano sustentáveis."
+    },
+    {
+      "recomendacao_id": "7.1",
+      "objetivo": 7,
+      "pagina_inicio": 89,
+      "pagina_fim": 89,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "AR",
+        "EC",
+        "ET",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Uso sustentável da internet: Realizar ações de comunicação educacional para estimular padrões sustentáveis de uso de internet. Seguir a recomendação 7.2 nas ações de comunicação educacional."
+    },
+    {
+      "recomendacao_id": "7.2",
+      "objetivo": 7,
+      "pagina_inicio": 89,
+      "pagina_fim": 90,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "AR",
+        "EC",
+        "ET",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Comunicação pública inclusiva e acessível: Usar linguagem simples, inclusiva, sem marcador de gênero e com recursos de acessibilidade na comunicação pública e na divulgação desta Carta. As mensagens devem ser claras, respeitando a diversidade de gênero e étnico-racial. Essas ações de comunicação devem garantir o direito da pessoa com deficiência acessar leitura, informação e comunicação (Estatuto da Pessoa com Deficiência, Art. 68). Exemplos de recursos de acessibilidade: Libras, Braille, arquivos digitais reconhecidos e acessados por leitores de tela, audiodescrição, Comunicação Alternativa etc."
+    },
+    {
+      "recomendacao_id": "7.3",
+      "objetivo": 7,
+      "pagina_inicio": 90,
+      "pagina_fim": 90,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH"
+      ],
+      "texto": "Transformação digital e educação urbana: Promover ações de comunicação pública inclusiva e acessível que sejam voltadas ao desenvolvimento urbano e à transformação digital sustentáveis. Abordar grandes transformações globais (ex. mudança do clima). O objetivo dessas ações é sensibilizar e ampliar a consciência da sociedade sobre os impactos desses processos."
+    },
+    {
+      "recomendacao_id": "7.3.1",
+      "objetivo": 7,
+      "pagina_inicio": 90,
+      "pagina_fim": 90,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "SP",
+        "IEP",
+        "IFF"
+      ],
+      "texto": "Cidade educadora: Usar a cidade como suporte para a educação urbana. Para isso, deve-se incentivar que as pessoas e instituições deem valor aos recursos naturais, as áreas verdes e espaços públicos, equipamentos e mobiliário urbano. Também deve-se informar o público sobre a história e o significado dos lugares. Essas ações devem ser associadas ao uso de ferramentas de mapeamento colaborativo que levantem e registrem aspectos subjetivos relacionados a espaços urbanos."
+    },
+    {
+      "recomendacao_id": "7.3.2",
+      "objetivo": 7,
+      "pagina_inicio": 90,
+      "pagina_fim": 90,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM"
+      ],
+      "texto": "Campanha de comunicação pública: Realizar campanha de comunicação pública para promover e informar sobre o desenvolvimento urbano sustentável. A campanha deve usar diferentes mídias, formatos e métodos digitais ou analógicos. O objetivo é alcançar: (1) crianças, pessoas jovens e adultas de diferentes raças, etnias, graus de instrução e papéis sociais; (2) diferentes cidades e contextos."
+    },
+    {
+      "recomendacao_id": "7.4",
+      "objetivo": 7,
+      "pagina_inicio": 91,
+      "pagina_fim": 91,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "AR",
+        "EC",
+        "ET",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Disseminação da agenda brasileira para cidades inteligentes: Desenvolver e implementar estratégia de comunicação pública da Carta em linguagem simples e inclusiva, com a participação de segmentos adeptos da cultura digital. O objetivo é alcançar a sociedade de forma ampla e sensibilizá-la, particularmente quanto a duas questões: (1) as relações existentes entre as cidades e as tecnologias de informação e comunicação (TICs); e (2) os direitos digitais das pessoas."
+    },
+    {
+      "recomendacao_id": "7.4.1",
+      "objetivo": 7,
+      "pagina_inicio": 91,
+      "pagina_fim": 91,
+      "publicos": [
+        "GF"
+      ],
+      "texto": "Guia prático da Carta: Desenvolver e disponibilizar um Guia Prático para implementar a Carta voltado para técnicos e gestores municipais, escrito em linguagem simples e inclusiva. O Guia deve comunicar, disseminar e apoiar a efetivação dos objetivos e recomendações da Carta."
+    },
+    {
+      "recomendacao_id": "7.4.2",
+      "objetivo": 7,
+      "pagina_inicio": 91,
+      "pagina_fim": 91,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "AR",
+        "EC",
+        "ET",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Vinculação de iniciativas de cidades inteligentes à Carta: Fortalecer esta Carta como instrumento político para articular uma agenda nacional para a transformação digital nas cidades. Para isso, deve-se estabelecer vínculos entre Objetivos Estratégicos e Recomendações desta Carta, de um lado, e as iniciativas correspondentes de cidades inteligentes existentes ou futuras, de outro (indexação de produtos-filhos). Como resultado desse processo, haverá o registro de um conjunto de saberes sobre cidades inteligentes e sua evolução."
+    },
+    {
+      "recomendacao_id": "7.5",
+      "objetivo": 7,
+      "pagina_inicio": 91,
+      "pagina_fim": 92,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "IEP"
+      ],
+      "texto": "Letramento digital: Estimular ações para promover o letramento digital e aumentar o número de pessoas que participam da transformação digital. Os objetivos são aumentar as capacidades de inovação da sociedade brasileira e reduzir a vulnerabilidade da população a crimes cibernéticos."
+    },
+    {
+      "recomendacao_id": "7.5.1",
+      "objetivo": 7,
+      "pagina_inicio": 92,
+      "pagina_fim": 92,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "SP",
+        "IEP",
+        "OSC"
+      ],
+      "texto": "Letramento digital nos currículos escolares: Observar, cumprir e ampliar as propostas contidas na Base Nacional Comum Curricular (BNCC) para integrar a cultura digital nos currículos escolares."
+    },
+    {
+      "recomendacao_id": "7.5.2",
+      "objetivo": 7,
+      "pagina_inicio": 92,
+      "pagina_fim": 92,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "SP",
+        "IEP",
+        "OSC"
+      ],
+      "texto": "Cultura digital na comunidade escolar: Estimular processos de capacitação e aprendizagem em tecnologias digitais para toda a comunidade escolar. Desenvolver ações de educação especificas para o letramento digital de pessoas educadoras capacitando-as para atuar como multiplicadoras da inclusão digital. O objetivo é ampliar, agilizar e facilitar o letramento digital desde a infância até a fase adulta."
+    },
+    {
+      "recomendacao_id": "7.5.3",
+      "objetivo": 7,
+      "pagina_inicio": 92,
+      "pagina_fim": 92,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "SP",
+        "IEP",
+        "OSC"
+      ],
+      "texto": "Recursos digitais na educação formal: Promover o aparelhamento tecnológico das instituições de ensino por meio de laboratórios, equipamentos, programas, ferramentas, softwares e outros recursos digitais."
+    },
+    {
+      "recomendacao_id": "7.6",
+      "objetivo": 7,
+      "pagina_inicio": 92,
+      "pagina_fim": 93,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "ET",
+        "IEP",
+        "OSC"
+      ],
+      "texto": "Práticas comunitárias urbanas: Articular ações de comunicação integrada (com campanhas planejadas e elaboradas em cooperação entre setores e instituições e que passam uma mensagem unificada) em linguagem simples e inclusiva. O objetivo é aumentar o engajamento social em plataformas que mobilizam e desenvolvem práticas comunitárias urbanas sustentáveis no contexto da transformação digital."
+    },
+    {
+      "recomendacao_id": "7.6.1",
+      "objetivo": 7,
+      "pagina_inicio": 93,
+      "pagina_fim": 94,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "AR",
+        "EC",
+        "ET",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Comunicação comunitária: Adotar o fortalecimento comunitário e a interface Estado e comunidade como estratégia para a transformação do território e a valorização do pertencimento, da identidade e da memória locais. Estimular projetos de educomunicação digital de base comunitária para produção de conteúdos. Os objetivos são: (1) disseminar perspectivas e pautas de interesse das comunidades envolvidas; (2) ampliar o acesso à inclusão digital; (3) fomentar a emancipação comunitária; (4) oferecer possibilidades de formação profissional. Construir meios para compreender e avaliar, de forma contínua e sistêmica, os impactos da transformação digital nas cidades."
+    },
+    {
+      "recomendacao_id": "8.1",
+      "objetivo": 8,
+      "pagina_inicio": 94,
+      "pagina_fim": 94,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "AR",
+        "EC",
+        "ET",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "TICs e direitos humanos: Reduzir os impactos negativos da transformação digital, criando tecnologias e processos centrados nos direitos humanos e no uso sustentável de recursos naturais. O foco nos direitos humanos deve incluir as perspectivas do direito digital."
+    },
+    {
+      "recomendacao_id": "8.1.1",
+      "objetivo": 8,
+      "pagina_inicio": 94,
+      "pagina_fim": 94,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Avaliação de impactos: Construir meios para compreender e avaliar, de forma continuada, sistêmica e transparente, os impactos de políticas, planos, programas, projetos, atividades e ações de transformação digital nas cidades. Utilizar dados e indicadores confiáveis e comparáveis (séries históricas). Dar publicidade e disseminar as metodologias adotadas e os resultados obtidos nas avaliações (transparência ativa)."
+    },
+    {
+      "recomendacao_id": "8.1.2",
+      "objetivo": 8,
+      "pagina_inicio": 95,
+      "pagina_fim": 95,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "AR",
+        "EC",
+        "ET",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Monitoramento de ações públicas: Estabelecer e disseminar mecanismos de monitoramento de políticas, planos, programas, projetos, atividades e ações de transformação digital nas cidades. Engajar todos os poderes e níveis de governo nessas iniciativas. Usar TICs e uniformizar mecanismos (indicadores, plataformas de disseminação) para promover a transparência ativa e facilitar o controle social."
+    },
+    {
+      "recomendacao_id": "8.1.3",
+      "objetivo": 8,
+      "pagina_inicio": 95,
+      "pagina_fim": 95,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "AR",
+        "EC",
+        "ET",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Revisão humana: Garantir e facilitar a revisão humana em processos de tomada de decisão automatizados ou baseados em Inteligência Artificial, em respeito aos direitos humanos. Implantar mecanismos de transparência ativa e assegurar ampla comunicação pública, em linguagem simples e inclusiva, às pessoas titulares de dados utilizados em serviços automatizados."
+    },
+    {
+      "recomendacao_id": "8.2",
+      "objetivo": 8,
+      "pagina_inicio": 95,
+      "pagina_fim": 95,
+      "publicos": [
+        "GF",
+        "GM",
+        "CIV",
+        "CIH",
+        "SP",
+        "IEP",
+        "OSC"
+      ],
+      "texto": "Observatório para a transformação digital nas cidades: Integrar o tema das cidades inteligentes ao Observatório para a Transformação Digital (OTD), considerando cidades inteligentes na perspectiva ampla de transformação digital nas cidades. Estimular que esse Observatório e outros fóruns oficiais relacionados à transformação digital busquem: (1) compreender e avaliar os impactos da transformação digital nas cidades; (2) incentivar a implementação desta Carta; e (3) fomentar, articular, integrar e disseminar as experiências provenientes dos Laboratórios de Experimentação Urbana [ver recomendação 4.5.4]."
+    },
+    {
+      "recomendacao_id": "8.3",
+      "objetivo": 8,
+      "pagina_inicio": 95,
+      "pagina_fim": 96,
+      "publicos": [
+        "GF",
+        "GM",
+        "CIV",
+        "IEP"
+      ],
+      "texto": "Maturidade para cidades inteligentes: Desenvolver e disponibilizar um Sistema Brasileiro de Maturidade para Cidades Inteligentes em uma plataforma digital própria a ser criada e mantida pelo governo federal. O Sistema deve usar metodologia e indicadores adequados à realidade brasileira e às tipologias municipais da Política Nacional de Desenvolvimento Urbano (PNDU). O objetivo é apoiar ações municipais voltadas ao desenvolvimento urbano e à transformação digital sustentáveis, além de monitorar nacionalmente o progresso dessas ações."
+    },
+    {
+      "recomendacao_id": "8.4",
+      "objetivo": 8,
+      "pagina_inicio": 96,
+      "pagina_fim": 96,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "AR",
+        "EC",
+        "ET",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Impactos locais da transformação digital e controle social: Estimular que os temas do desenvolvimento urbano e da transformação digital sejam discutidos de forma integrada. Para isso, deve-se estimular a articulação institucional de conselhos ou fóruns que debatem sobre esses temas e que atuem no controle social de políticas públicas. Essas instituições devem acompanhar, avaliar e dar suporte à atuação do município sobre os impactos da transformação digital no território. As ações junto aos municípios devem considerar as condições político-institucionais específicas de cada cidade."
+    },
+    {
+      "recomendacao_id": "8.5",
+      "objetivo": 8,
+      "pagina_inicio": 96,
+      "pagina_fim": 96,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "AR",
+        "EC",
+        "ET",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Ciência, tecnologia e inovação para a transformação digital e o desenvolvimento urbano sustentáveis: Mobilizar diferentes setores da sociedade para ampliar a compreensão sobre os impactos da transformação digital nas cidades. Devem ser considerados os impactos sobre os aspectos econômico-financeiro, sociocultural, urbano-ambiental e político-institucional."
+    },
+    {
+      "recomendacao_id": "8.5.1",
+      "objetivo": 8,
+      "pagina_inicio": 96,
+      "pagina_fim": 96,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "AR",
+        "EC",
+        "ET",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Linhas de pesquisa: Incentivar linhas de pesquisa e bolsas de fomento que favoreçam projetos transdisciplinares. O objetivo é produzir conhecimento científico de ponta e de forma contínua sobre a transformação digital nas cidades e seus impactos."
+    },
+    {
+      "recomendacao_id": "8.5.2",
+      "objetivo": 8,
+      "pagina_inicio": 97,
+      "pagina_fim": 97,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "AR",
+        "EC",
+        "ET",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "“Ciberinfraestrutura” para geração de conhecimento sobre desenvolvimento urbano sustentável: Apoiar projetos de pesquisa, desenvolvimento e inovação que precisem de “ciberinfraestrutura” (infraestrutura de sistemas operacionais, gestão e processamento de dados, instrumentos avançados e ambientes de visualização) de grande porte. Para tal apoio, devem-se realizar investimentos de longo prazo e articular iniciativas desse tipo de infraestrutura."
+    },
+    {
+      "recomendacao_id": "8.5.3",
+      "objetivo": 8,
+      "pagina_inicio": 97,
+      "pagina_fim": 97,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "AR",
+        "EC",
+        "ET",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Integração de campos disciplinares: Promover eventos técnicos e científicos e linhas de pesquisa que reúnam pessoas e instituições das áreas de desenvolvimento urbano e tecnologias da informação e comunicação. Esses eventos e linhas de pesquisa devem avançar na compreensão do fenômeno da transformação digital e das relações que esse fenômeno tem com diferentes disciplinas. O objetivo é consolidar uma abordagem transdisciplinar de pesquisa e ação."
+    },
+    {
+      "recomendacao_id": "8.5.4",
+      "objetivo": 8,
+      "pagina_inicio": 97,
+      "pagina_fim": 97,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "AR",
+        "EC",
+        "ET",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Compreensão e atuação sobre impactos negativos: Entender e quantificar os impactos negativos de produtos, serviços e processos inovadores ligados a tecnologias de comunicação e informação (TICs) nas cidades brasileiras. Esse levantamento deve considerar a diversidade territorial das cidades. O objetivo é propor mecanismos para prevenir e, quando forem inevitáveis, reduzir e compensar esses impactos negativos, bem como acompanhar a sua evolução."
+    },
+    {
+      "recomendacao_id": "8.5.5",
+      "objetivo": 8,
+      "pagina_inicio": 97,
+      "pagina_fim": 98,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "AR",
+        "EC",
+        "ET",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Tecnologias assistivas: Estimular a pesquisa, o desenvolvimento, a inovação e a difusão de tecnologias assistivas (recursos que ampliam o acesso e a participação de pessoas com deficiência) que tenham como objetivo: (1) ampliar o acesso de pessoas com deficiência às tecnologias da informação e comunicação; (2) ampliar o acesso de pessoas com deficiência às tecnologias sociais; (3) aumentar a autonomia de pessoas com deficiência nas cidades; e (4) aumentar o engajamento de pessoas com deficiência nas questões urbanas relacionadas à transformação digital (Estatuto da Pessoa com Deficiência, Art. 78; Plano Nacional dos Direitos da Pessoa com Deficiência, Art. 3o, VIII; Comitê Interministerial de Tecnologia Assistiva)."
+    },
+    {
+      "recomendacao_id": "8.6",
+      "objetivo": 8,
+      "pagina_inicio": 98,
+      "pagina_fim": 98,
+      "publicos": [
+        "GF",
+        "GE",
+        "GM",
+        "CIV",
+        "CIH",
+        "AR",
+        "EC",
+        "ET",
+        "SP",
+        "IEP",
+        "IFF",
+        "OSC"
+      ],
+      "texto": "Logística reversa de produtos eletrônicos: Acelerar e dar transparência à estruturação e à implementação de sistemas de logística reversa (coletar e devolver resíduos sólidos ao setor empresarial ou descartá-los corretamente). Esses sistemas devem incluir, por exemplo, fábricas, importadoras, distribuidoras e comércios de produtos eletroeletrônicos e seus componentes. As empresas devem oferecer às pessoas consumidoras dos itens a possibilidade de devolver os resíduos, sem usar serviços públicos de limpeza urbana ou manejo de resíduos sólidos (Política Nacional de Resíduos Sólidos, Art. 33)."
+    }
+  ]
+}

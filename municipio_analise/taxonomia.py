@@ -1,3 +1,7 @@
+from __future__ import annotations
+
+"""Taxonomia temática sincronizada com o notebook de referência (18/08/2026)."""
+
 CHUNKS_GERAIS = ['conceito_brasileiro_de_cidades_inteligentes',
  'diversidade_territorial_e_reducao_de_desigualdades',
  'transformacao_digital_adaptada_a_capacidade_municipal']
@@ -33,13 +37,37 @@ CHUNKS_CAPACIDADES_INSTITUCIONAIS = ['governanca_e_planejamento',
  'monitoramento_e_transparencia',
  'dados_e_seguranca_da_informacao']
 
-DIMENSOES = {
-    "Econômica": {"prefixo": "economica", "topicos": CHUNKS_ECONOMICA},
-    "Sociocultural": {"prefixo": "sociocultural", "topicos": CHUNKS_SOCIOCULTURAL},
-    "Meio Ambiente": {"prefixo": "meio_ambiente", "topicos": CHUNKS_MEIO_AMBIENTE},
-    "Capacidades Institucionais": {"prefixo": "institucional", "topicos": CHUNKS_CAPACIDADES_INSTITUCIONAIS},
-}
-
+DIMENSOES = {'Econômica': {'prefixo': 'economica',
+               'topicos': ['agua_e_esgoto',
+                           'residuos_solidos',
+                           'transporte',
+                           'vias_publicas',
+                           'conectividade',
+                           'inovacao',
+                           'gestao_urbana',
+                           'servicos_online',
+                           'dados_abertos']},
+ 'Sociocultural': {'prefixo': 'sociocultural',
+                   'topicos': ['educacao',
+                               'cultura_e_esporte',
+                               'saude',
+                               'seguranca_publica',
+                               'defesa_civil',
+                               'inclusao_digital',
+                               'inclusao_e_equidade',
+                               'participacao_cidada']},
+ 'Meio Ambiente': {'prefixo': 'meio_ambiente',
+                   'topicos': ['agua_e_saneamento',
+                               'residuos_solidos',
+                               'areas_verdes',
+                               'qualidade_do_ar_e_emissoes',
+                               'energia_e_iluminacao_publica']},
+ 'Capacidades Institucionais': {'prefixo': 'institucional',
+                                'topicos': ['governanca_e_planejamento',
+                                            'infraestrutura_de_ti',
+                                            'servicos_publicos_digitais',
+                                            'monitoramento_e_transparencia',
+                                            'dados_e_seguranca_da_informacao']}}
 
 PALAVRAS_CHAVE_TOPICO = {'agua_e_esgoto': ['água', 'esgoto', 'saneamento básico', 'abastecimento'],
  'residuos_solidos': ['resíduos sólidos', 'lixo', 'coleta seletiva', 'reciclagem'],
@@ -67,19 +95,6 @@ PALAVRAS_CHAVE_TOPICO = {'agua_e_esgoto': ['água', 'esgoto', 'saneamento básic
  'servicos_publicos_digitais': ['serviços públicos digitais', 'digitalização'],
  'monitoramento_e_transparencia': ['monitoramento', 'transparência', 'prestação de contas'],
  'dados_e_seguranca_da_informacao': ['proteção de dados', 'segurança da informação', 'lgpd']}
-
-
-TOPICOS_SEM_CHUNK_NA_CARTA = ['economica_transporte',
- 'economica_vias_publicas',
- 'sociocultural_cultura_e_esporte',
- 'sociocultural_saude',
- 'sociocultural_seguranca_publica',
- 'sociocultural_defesa_civil',
- 'meio_ambiente_agua_e_saneamento',
- 'meio_ambiente_residuos_solidos',
- 'meio_ambiente_areas_verdes',
- 'institucional_servicos_publicos_digitais']
-
 
 DIMENSAO_PARA_CHAVE = {
     "Econômica": "economica",

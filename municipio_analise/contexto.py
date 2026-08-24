@@ -6,7 +6,8 @@ from .dados import DADOS_CONTEXTUAIS_MAPA
 from .taxonomia import DIMENSOES
 
 
-def obter_dados_contextuais(dimensao: str, linha_planilha) -> dict:
+def obter_dados_contextuais(dimensao, linha_planilha):
+    """Dados auxiliares: nunca entram no cálculo de maturidade/priorização."""
     dados = {}
     for chave_normalizada, info in DADOS_CONTEXTUAIS_MAPA.items():
         if info["dimensao"] != dimensao:
@@ -18,7 +19,7 @@ def obter_dados_contextuais(dimensao: str, linha_planilha) -> dict:
     return dados
 
 
-def obter_todos_dados_contextuais(linha_planilha) -> dict:
+def obter_todos_dados_contextuais(linha_planilha):
     dados = {}
     for dimensao in DIMENSOES:
         dados.update(obter_dados_contextuais(dimensao, linha_planilha))

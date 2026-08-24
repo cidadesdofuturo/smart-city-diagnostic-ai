@@ -2,36 +2,28 @@ from __future__ import annotations
 
 import argparse
 import json
-
 from .config import Config
 from .pipeline import PipelineAnaliseMunicipio
+from .planilha import carregar_planilha, listar_municipios
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Diagnóstico municipal com IA")
-    parser.add_argument("--base-path", default=None, help="Pasta que contém indicadores.xlsx")
-    parser.add_argument("--municipio", default=None, help="Município a analisar")
-    parser.add_argument("--json", action="store_true", help="Imprime o JSON final")
+    parser = argparse.ArgumentParser(description="Diagnóstico municipal com Claude + RAG da Carta")
+    parser.add_argument("municipio", nargs="?", help="Nome exato do município na planilha")
+    parser.add_argument("--dados-dir", default=None, help="Diretório com indicadores.xlsx e índices FAISS")
+    parser.add_argument("--sem-word", action="store_true", help="Não gerar relatório DOCX")
     args = parser.parse_args()
-
-    config = Config(base_path=args.base_path) if args.base_path else Config()
-    pipeline = PipelineAnaliseMunicipio(config)
-    pipeline.carregar_planilha()
-
+    cfg = Config(base_path=args.dados_dir) if args.dados_dir else Config()
     municipio = args.municipio
     if not municipio:
-        municipios = pipeline.municipios()
-        print("Municípios disponíveis:")
+        df = carregar_planilha(cfg)
+        municipios = listar_municipios(df, cfg.coluna_municipio)
         for i, nome in enumerate(municipios, 1):
             print(f"{i} - {nome}")
         escolha = int(input("Digite o número do município: "))
         municipio = municipios[escolha - 1]
-
-    relatorio = pipeline.analisar_municipio(municipio)
-    caminho = pipeline.salvar_relatorio(municipio, relatorio)
-    if args.json:
-        print(json.dumps(relatorio, ensure_ascii=False, indent=2))
-    print(f"Relatório gerado: {caminho}")
+    resultado = PipelineAnaliseMunicipio(cfg).analisar(municipio, gerar_word=not args.sem_word)
+    print(json.dumps(resultado, ensure_ascii=False, indent=2, default=str))
 
 
 if __name__ == "__main__":

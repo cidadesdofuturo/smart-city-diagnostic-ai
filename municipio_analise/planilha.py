@@ -1,19 +1,17 @@
 from __future__ import annotations
 
 import pandas as pd
-
 from .config import Config
 from .utils import normalizar_coluna
 
 
 def carregar_planilha(config: Config) -> pd.DataFrame:
-    config.validar(exigir_planilha=True, exigir_api=False)
+    config.validar(exigir_planilha=True, exigir_api=False, exigir_embeddings=False)
     df = pd.read_excel(config.caminho_planilha)
     df.columns = [normalizar_coluna(c) for c in df.columns]
-    if config.coluna_municipio not in df.columns:
-        raise KeyError(f"Coluna obrigatória ausente: {config.coluna_municipio}")
-    if config.coluna_populacao not in df.columns:
-        raise KeyError(f"Coluna obrigatória ausente: {config.coluna_populacao}")
+    for obrigatoria in (config.coluna_municipio, config.coluna_populacao):
+        if obrigatoria not in df.columns:
+            raise KeyError(f"Coluna obrigatória ausente: {obrigatoria}")
     return df
 
 

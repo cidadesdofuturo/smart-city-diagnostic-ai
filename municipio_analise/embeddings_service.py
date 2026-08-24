@@ -1,15 +1,14 @@
 from __future__ import annotations
 
 from .config import Config
-from .dados import CHUNKS_CARTA
 from .taxonomia import DIMENSOES, PALAVRAS_CHAVE_TOPICO
 
 
 class EmbeddingsService:
-    """Gerencia embeddings e os dois índices FAISS do notebook-fonte.
+    """Gemini é usado somente para embeddings/FAISS.
 
-    Os imports pesados são tardios para permitir testes da lógica local sem
-    chave de API ou instalação do stack de IA.
+    Dependências pesadas são carregadas sob demanda, permitindo importar e
+    testar o restante do pacote sem inicializar clientes externos.
     """
 
     def __init__(self, config: Config):
@@ -18,107 +17,97 @@ class EmbeddingsService:
         self._indice_topicos = None
         self._indice_chunks = None
 
-    def _deps(self):
-        try:
-            from langchain_google_genai import GoogleGenerativeAIEmbeddings
-            from langchain_community.vectorstores import FAISS
-            from langchain_core.documents import Document as LCDocument
-        except ImportError as exc:
-            raise RuntimeError(
-                "Dependências de IA ausentes. Execute: pip install -r requirements.txt"
-            ) from exc
-        return GoogleGenerativeAIEmbeddings, FAISS, LCDocument
-
     @property
     def embeddings(self):
         if self._embeddings is None:
-            GoogleGenerativeAIEmbeddings, _, _ = self._deps()
+            self.config.validar(exigir_planilha=False, exigir_api=False, exigir_embeddings=True)
+            try:
+                from langchain_google_genai import GoogleGenerativeAIEmbeddings
+            except ImportError as exc:
+                raise RuntimeError(
+                    "Instale as dependências do projeto (langchain-google-genai)."
+                ) from exc
             self._embeddings = GoogleGenerativeAIEmbeddings(
                 model=self.config.modelo_embedding,
-                google_api_key=self.config.api_key,
+                google_api_key=self.config.gemini_api_key,
             )
         return self._embeddings
 
-    def _construir_indice_topicos(self):
-        _, FAISS, LCDocument = self._deps()
-        documentos = []
+    def _docs_topicos(self):
+        try:
+            from langchain_core.documents import Document as LCDocument
+        except ImportError as exc:
+            raise RuntimeError("Instale langchain-core.") from exc
+        docs = []
         for dimensao, info in DIMENSOES.items():
             for topico in info["topicos"]:
-                palavras = PALAVRAS_CHAVE_TOPICO.get(topico, [])
-                texto = f"{topico.replace('_', ' ')}: {', '.join(palavras)}"
-                documentos.append(
-                    LCDocument(
-                        page_content=texto,
-                        metadata={
-                            "dimensao": dimensao,
-                            "topico": topico.replace("_", " ").title(),
-                            "chunk_id": f"{info['prefixo']}_{topico}",
-                        },
-                    )
-                )
-        return FAISS.from_documents(documentos, self.embeddings)
+                termos = PALAVRAS_CHAVE_TOPICO.get(topico, [])
+                docs.append(LCDocument(
+                    page_content=(
+                        f"Dimensão: {dimensao}. Tópico: {topico.replace('_', ' ')}. "
+                        f"Termos relacionados: {', '.join(termos)}"
+                    ),
+                    metadata={
+                        "dimensao": dimensao,
+                        "topico": topico.replace("_", " ").title(),
+                        "chunk_id": f"{info['prefixo']}_{topico}",
+                    },
+                ))
+        return docs
 
-    def _construir_indice_chunks(self):
-        _, FAISS, LCDocument = self._deps()
-        documentos = [
-            LCDocument(
-                page_content=f"{c['topico']}: {c['texto']}",
-                metadata={
-                    "chunk_id": c["chunk_id"],
-                    "dimensao": c["dimensao"],
-                    "topico": c["topico"],
-                },
-            )
-            for c in CHUNKS_CARTA.values()
-        ]
-        return FAISS.from_documents(documentos, self.embeddings)
-
+    @property
     def indice_topicos(self):
-        if self._indice_topicos is None:
-            _, FAISS, _ = self._deps()
-            path = self.config.caminho_faiss_topicos
-            if path.exists():
-                self._indice_topicos = FAISS.load_local(
-                    str(path), self.embeddings, allow_dangerous_deserialization=True
-                )
-            else:
-                self._indice_topicos = self._construir_indice_topicos()
-                self._indice_topicos.save_local(str(path))
+        if self._indice_topicos is not None:
+            return self._indice_topicos
+        try:
+            from langchain_community.vectorstores import FAISS
+        except ImportError as exc:
+            raise RuntimeError("Instale langchain-community e faiss-cpu.") from exc
+        caminho = self.config.caminho_faiss_topicos
+        if caminho.exists():
+            self._indice_topicos = FAISS.load_local(
+                str(caminho), self.embeddings, allow_dangerous_deserialization=True
+            )
+        else:
+            self._indice_topicos = FAISS.from_documents(self._docs_topicos(), self.embeddings)
+            caminho.parent.mkdir(parents=True, exist_ok=True)
+            self._indice_topicos.save_local(str(caminho))
         return self._indice_topicos
 
-    def indice_chunks(self):
-        if self._indice_chunks is None:
-            _, FAISS, _ = self._deps()
-            path = self.config.caminho_faiss_chunks
-            if path.exists():
-                self._indice_chunks = FAISS.load_local(
-                    str(path), self.embeddings, allow_dangerous_deserialization=True
-                )
-            else:
-                self._indice_chunks = self._construir_indice_chunks()
-                self._indice_chunks.save_local(str(path))
-        return self._indice_chunks
-
-    def classificar_topico(self, nome_indicador: str) -> dict | None:
-        resultados = self.indice_topicos().similarity_search_with_relevance_scores(
-            nome_indicador, k=1
-        )
+    def classificar_topico(self, nome_indicador: str):
+        resultados = self.indice_topicos.similarity_search_with_score(nome_indicador, k=1)
         if not resultados:
             return None
-        doc, score = resultados[0]
+        doc, distancia = resultados[0]
+        score = 1.0 / (1.0 + max(0.0, float(distancia)))
         if score < self.config.limiar_relevancia_topico:
             return None
-        return {
-            "dimensao": doc.metadata["dimensao"],
-            "topico": doc.metadata["topico"],
-            "chunk_id": doc.metadata["chunk_id"],
-        }
+        return dict(doc.metadata)
 
-    def buscar_chunk_na_dimensao(self, consulta: str, dimensao: str):
-        resultados = self.indice_chunks().similarity_search(
-            consulta,
-            k=1,
-            filter={"dimensao": dimensao},
-            fetch_k=50,
-        )
-        return resultados[0] if resultados else None
+    @property
+    def indice_chunks(self):
+        if self._indice_chunks is not None:
+            return self._indice_chunks
+        from .dados import CHUNKS_CARTA
+        try:
+            from langchain_core.documents import Document as LCDocument
+            from langchain_community.vectorstores import FAISS
+        except ImportError as exc:
+            raise RuntimeError("Instale langchain-core, langchain-community e faiss-cpu.") from exc
+        caminho = self.config.caminho_faiss_chunks
+        if caminho.exists():
+            self._indice_chunks = FAISS.load_local(
+                str(caminho), self.embeddings, allow_dangerous_deserialization=True
+            )
+        else:
+            docs = [
+                LCDocument(
+                    page_content=c["texto"],
+                    metadata={"chunk_id": cid, "dimensao": c.get("dimensao", "")},
+                )
+                for cid, c in CHUNKS_CARTA.items()
+            ]
+            self._indice_chunks = FAISS.from_documents(docs, self.embeddings)
+            caminho.parent.mkdir(parents=True, exist_ok=True)
+            self._indice_chunks.save_local(str(caminho))
+        return self._indice_chunks

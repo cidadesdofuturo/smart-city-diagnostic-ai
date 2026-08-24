@@ -1,35 +1,14 @@
 # Smart City Diagnostic AI
 
-Pipeline de diagnóstico municipal do **Programa Cidades do Futuro**, estruturado a partir de indicadores municipais de maturidade, da Carta Brasileira para Cidades Inteligentes, busca semântica com FAISS e validação web controlada.
+Pipeline de diagnóstico municipal do Programa Cidades do Futuro, estruturado a partir de indicadores municipais de maturidade, da Carta Brasileira para Cidades Inteligentes, busca semântica com FAISS e validação web controlada.
 
-> Implementação de referência atual: `notebooks/notebook_fonte_validacao_web.ipynb`
-
-## Exemplo de relatório
-
-Um **relatório completo de exemplo** gerado pelo pipeline está disponível neste repositório:
-
-**[Ver relatório de exemplo - Viçosa/MG](docs/exemplos/relatorio_vicosa.pdf)**
-
-O arquivo demonstra o formato final entregue pelo sistema, incluindo:
-
-- caracterização do município;
-- análise das dimensões de maturidade;
-- interpretação dos indicadores municipais;
-- contextualização com informações externas validadas;
-- referências à Carta Brasileira para Cidades Inteligentes;
-- identificação de capacidades e lacunas;
-- sugestões de melhoria;
-- análise geral consolidada.
-
-O relatório publicado tem finalidade **exclusivamente demonstrativa**, permitindo visualizar o tipo de resultado produzido pelo pipeline sem necessidade de executar o projeto.
-
-Relatórios operacionais, bases municipais, planilhas de trabalho e demais artefatos gerados durante a execução permanecem fora do repositório.
+> Implementação de referência sincronizada: `notebooks/notebook_fonte_validacao_web.ipynb`
 
 ## O que o projeto faz
 
 - lê `indicadores.xlsx`;
 - classifica indicadores em quatro dimensões e tópicos;
-- usa a escala de maturidade 0-7 para priorizar lacunas e capacidades;
+- usa a escala de maturidade 0–7 para priorizar lacunas e capacidades;
 - usa embeddings e FAISS para classificação semântica de indicadores novos;
 - usa um índice FAISS granular da Carta Brasileira para recuperar referências metodológicas relevantes;
 - prioriza até 5 indicadores/tópicos por dimensão para o RAG;
@@ -47,10 +26,10 @@ Relatórios operacionais, bases municipais, planilhas de trabalho e demais artef
 
 ## Modelos
 
-- **LLM principal:** Claude Sonnet 4.6 (`claude-sonnet-4-6`)
-- **Pesquisa web:** Claude Web Search (`web_search_20250305`)
-- **Embeddings:** Google Gemini (`models/gemini-embedding-001`)
-- **Busca vetorial:** FAISS
+- LLM principal: Claude Sonnet 4.6 (`claude-sonnet-4-6`)
+- Pesquisa web: Claude Web Search (`web_search_20250305`)
+- Embeddings: Google Gemini (`models/gemini-embedding-001`)
+- Busca vetorial: FAISS
 
 O Gemini permanece apenas na camada de embeddings. A geração, revisão e pesquisa web são feitas pelo Claude.
 
@@ -61,11 +40,11 @@ indicadores.xlsx
       ↓
 normalização e classificação dos indicadores
       ↓
-níveis de maturidade 0-7
+níveis de maturidade 0–7
       ↓
 seleção de até 5 prioridades por dimensão
       ↓
-FAISS da Carta Brasileira
+FAISS granular da Carta Brasileira
       ↓
 8 candidatos por prioridade
       ↓
@@ -73,7 +52,7 @@ reranking semântico + maturidade + dimensão + tópico + cobertura
       ↓
 até 8 chunks finais da Carta
       ↓
-Claude Sonnet: rascunho da dimensão
+Claude Sonnet: rascunho da dimensão SEM web
       ↓
 Claude Web Search: validação de até 5 pontos
       ↓
@@ -81,7 +60,7 @@ Claude Sonnet: revisão final da dimensão
       ↓
 repete para as 4 dimensões
       ↓
-Análise Geral a partir das dimensões finalizadas
+Análise Geral a partir das dimensões finalizadas, sem nova web
       ↓
 relatório Word
 ```
@@ -104,13 +83,10 @@ Para cada dimensão:
 2. o sistema prioriza até 5 tópicos/indicadores com base na maturidade;
 3. para cada prioridade, cria uma consulta com dimensão, tópico, indicador e situação observada;
 4. o FAISS recupera até 8 candidatos;
-5. os candidatos são reranqueados considerando:
-   - similaridade semântica;
-   - maturidade do indicador;
-   - aderência à dimensão;
-   - aderência ao tópico;
-   - cobertura de múltiplos indicadores;
+5. os candidatos são reranqueados considerando similaridade semântica, maturidade do indicador, aderência à dimensão, aderência ao tópico e cobertura de múltiplos indicadores;
 6. no máximo 8 chunks são enviados ao Claude.
+
+O corpus granular versionado contém **185 documentos**: 3 conceitos, 5 princípios, 6 diretrizes, 8 contextos de objetivos e 163 recomendações da edição revisada da Carta.
 
 ## Validação web
 
@@ -126,6 +102,8 @@ A pesquisa web é complementar e segue regras rígidas:
 - não gerar recomendação baseada somente em uma notícia;
 - não citar o próprio Programa Cidades do Futuro como evidência do diagnóstico.
 
+A validação é feita **depois do rascunho**, em uma única etapa de grounding por dimensão, com até cinco pontos prioritários e enriquecimento nominal complementar. Se não houver atualização confiável, o rascunho é mantido.
+
 ## Linguagem e regras editoriais
 
 Os relatórios são escritos para gestores municipais não especialistas. O sistema prioriza frases diretas, explica siglas e conceitos quando necessário e evita jargão excessivo.
@@ -135,27 +113,78 @@ Regras adicionais:
 - não usar o Programa Cidades do Futuro como evidência ou recomendação;
 - não usar travessão (`—`) no texto final;
 - usar 2 ou 3 parágrafos por dimensão;
-- produzir 4 sugestões de melhoria por dimensão;
+- produzir exatamente 4 sugestões de melhoria por dimensão;
 - preservar o indicador histórico mesmo quando a web mostra uma ação mais recente.
 
-## Configuração das chaves
+## Instalação do pacote modular
 
-No Google Colab, configure os Secrets:
+Requer Python 3.11+.
+
+```bash
+python -m venv .venv
+```
+
+Windows:
+
+```bash
+.venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+Linux/macOS:
+
+```bash
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+Configure as chaves no ambiente:
+
+```text
+ANTHROPIC_API_KEY=...
+GEMINI_API_KEY=...
+MUNICIPIO_DADOS_DIR=./dados
+```
 
 - `ANTHROPIC_API_KEY`: geração, revisão e Claude Web Search;
-- `API`: embeddings Gemini.
+- `GEMINI_API_KEY`: somente embeddings/FAISS.
 
 Nunca publique as chaves no GitHub.
 
+Coloque `indicadores.xlsx` no diretório definido por `MUNICIPIO_DADOS_DIR`.
+
+### Execução local
+
+```bash
+python -m municipio_analise "Viçosa"
+```
+
+ou, após instalar o pacote:
+
+```bash
+smart-city-diagnostic "Viçosa"
+```
+
+Para não gerar Word:
+
+```bash
+python -m municipio_analise "Viçosa" --sem-word
+```
+
+Na primeira execução do RAG granular, o índice da Carta é construído em lotes e salvo localmente. O manifesto permite retomar uma construção interrompida. Índices FAISS não devem ser versionados.
+
 ## Execução no Colab
 
-A implementação atual foi desenhada para execução no Google Colab e usa o Google Drive para leitura da planilha, persistência dos índices FAISS e gravação dos relatórios.
+O notebook continua disponível para execução no Google Colab e usa o Google Drive para leitura da planilha, persistência dos índices FAISS e gravação dos relatórios.
 
 Abra:
 
 `notebooks/notebook_fonte_validacao_web.ipynb`
 
-Execute as células na ordem e selecione o município solicitado pelo notebook.
+No Colab, configure os Secrets usados no notebook:
+
+- `ANTHROPIC_API_KEY`;
+- `API` para embeddings Gemini.
 
 ## Estrutura do repositório
 
@@ -163,11 +192,13 @@ Execute as células na ordem e selecione o município solicitado pelo notebook.
 smart-city-diagnostic-ai/
 ├── dados/
 ├── docs/
-│   ├── ARQUITETURA.md
-│   ├── METODOLOGIA.md
-│   └── exemplos/
-│       └── relatorio_vicosa.pdf
 ├── municipio_analise/
+│   ├── data/
+│   │   └── carta_revisada_snapshot.json
+│   ├── carta_granular.py
+│   ├── llm_service.py
+│   ├── pipeline.py
+│   └── ...
 ├── notebooks/
 │   ├── exemplo_colab.ipynb
 │   └── notebook_fonte_validacao_web.ipynb
@@ -180,17 +211,15 @@ smart-city-diagnostic-ai/
 └── pyproject.toml
 ```
 
-### Nota sobre `municipio_analise/`
+### Estado do pacote `municipio_analise/`
 
-O pacote modular foi criado a partir de uma versão anterior do notebook. Até que a sincronização completa com Claude Sonnet, Claude Web Search e o RAG granular seja concluída, o notebook acima deve ser tratado como a fonte de verdade da implementação atual.
+A partir da versão **0.3.0**, o pacote modular foi sincronizado com a arquitetura do notebook-fonte: Claude Sonnet 4.6, Claude Web Search pós-rascunho, RAG granular da Carta e Análise Geral ao final.
 
 ## Segurança e dados
 
-- nunca publique `.env`, chaves de API, planilhas municipais ou índices FAISS gerados;
+- nunca publique `.env`, planilhas municipais, índices FAISS gerados ou relatórios contendo dados de trabalho;
 - nunca publique `ANTHROPIC_API_KEY` ou a chave Gemini;
-- relatórios operacionais e dados de trabalho devem permanecer no `.gitignore`;
-- apenas relatórios especificamente preparados para demonstração pública, sem informações restritas ou operacionais, devem ser versionados no repositório;
-- o relatório disponível em `docs/exemplos/` possui finalidade demonstrativa.
+- mantenha dados operacionais e artefatos gerados no `.gitignore`.
 
 ## Licenciamento
 
