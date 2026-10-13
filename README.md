@@ -224,3 +224,5 @@ A partir da versão **0.3.0**, o pacote modular foi sincronizado com a arquitetu
 ## Licenciamento
 
 Consulte o arquivo de licença e as regras institucionais do projeto antes de reutilizar ou redistribuir componentes.
+## Licença
+O código original deste projeto está sob a [GNU GPL versão 3](LICENSE). Componentes de terceiros mantêm suas próprias licenças.
